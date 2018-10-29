@@ -36,3 +36,6 @@ public_ftp/
 public_html/
 www/scss/.sass-cache/
 www/bower_components
+
+# IDE
+/.idea/
