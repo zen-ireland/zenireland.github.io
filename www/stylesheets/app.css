@@ -1495,7 +1495,7 @@ body{font-family:'Raleway',sans-serif;font-size:18px}
 sc{font-variant:small-caps;font-weight:bold}
 .padfix{padding:3%}
 hr{text-align:center;margin:0 auto;opacity:0.5}
-/*ul{text-transform:uppercase}*/
+ul.button-group{text-transform:uppercase}
 ul.inline-list.right{text-transform:none}
 ul.inline-list.right a{color:#000}
 ul.inline-list.right a:hover{color:rgba(0,0,0,0.5)}
