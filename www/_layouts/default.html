@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} - Zen in Ireland</title>
+  <link rel="stylesheet" href="stylesheets/app.css" />
+  <script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+
+<body>
+<section class="about">
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="main-wrapper">
+        <h1>Zen In Ireland</h1>
+        <hr>
+        <div class="row">
+          <div class="large-6 columns large-centered">
+            <ul class="button-group even-4">
+              <li><a href="index.html" class="small button">Home</a></li>
+              <li><a href="about.html" class="small button">About</a></li>
+              <li><a href="#" data-dropdown="hover1" class="padfix small button">Locations</a></li>
+
+              <ul id="hover1" class="f-dropdown" data-dropdown-content>
+                <li><a href="dublin.html">Dublin</a></li>
+                <li><a href="galway.html">Galway</a></li>
+                <li><a href="limerick.html">Limerick</a></li>
+		<li><a href="http://spaceformeditation.blogspot.com/p/inspiration.html">Ranelagh</a></li>
+                <li><a href="cork.html">Cork</a></li>
+              </ul>
+              <li><a href="index.html#contact" class="small button">Contact</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% if page.title == 'Home' %}
+  <div class="row">
+    <div class="large-6 columns about-box">
+      <div class="black-box">
+        <h2>‘Therefore, put aside the intellectual practice</h2>
+        <p>of investigating words and chasing phrases, and learn to take the backward step that turns the light and shines it inward. Body and mind of themselves will drop away, and your original face will manifest.’</p>
+        <p>Fukan-Zazengi, Dogen (1200-1253)</p>
+        <a href="about.html" class="secondary small button">Learn More →</a>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</section>
+
+<section class="hero-content">
+  <div class="row">
+    <div class="large-12 columns about-content">
+{{ content }}
+    </div>
+  </div>
+</section>
+
+  {% if page.title == 'Home' %}
+<div class="row">
+  <div class="large-12 columns">
+    <div class="panel">
+      <div class="row">
+        <div class="large-12 columns" id="contact">
+          <h4>Get in touch!</h4>
+	  <p>Below you will find the easiest ways to contact each dojo. For Ranelagh its best to use their <a href="http://spaceformeditation.blogspot.com/p/inspiration.html">blog</a>.</p>
+          <p>For information about Dublin please email: <script type="text/javascript">var a = new Array('.com','zen.in.','ireland@gmail', '?', 'subject=Dublin Zendo');document.write("<a href='mailto:"+a[1]+a[2]+a[0]+a[3]+a[4]+"'>"+a[1]+a[2]+a[0]+"</a>");</script></p>
+          <p> For information about Galway please email: <script type="text/javascript">var a = new Array('.com','zengalway','@gmail', '?', 'subject=Galway Zendo');document.write("<a href='mailto:"+a[1]+a[2]+a[0]+a[3]+a[4]+"'>"+a[1]+a[2]+a[0]+"</a>");</script>
+          <p> For information about Limerick please email: <script type="text/javascript">var a = new Array('.com','zengalway','@gmail', '?', 'subject=Limerick Zendo');document.write("<a href='mailto:"+a[1]+a[2]+a[0]+a[3]+a[4]+"'>"+a[1]+a[2]+a[0]+"</a>");</script> or phone Melinda O863747115.
+          <p>For information about Cork please email:    <script type="text/javascript">var a = new Array('.com','zen.in.','ireland@gmail', '?', 'subject=Cork Zendo');document.write("<a href='mailto:"+a[1]+a[2]+a[0]+a[3]+a[4]+"'>"+a[1]+a[2]+a[0]+"</a>");</script></p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  {% endif %}
+
+<footer>
+  <div class="row">
+    <div class="large-6 columns">
+      <p>© Copyright Zen In Ireland & their respective holders.</p>
+    </div>
+    <div class="large-6 columns">
+      <ul class="inline-list right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

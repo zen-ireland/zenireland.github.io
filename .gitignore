@@ -38,3 +38,8 @@ www/scss/.sass-cache/
 
 # IDE
 /.idea/
+
+# jekyll
+_site
+.sass-cache
+.jekyll-metadata
