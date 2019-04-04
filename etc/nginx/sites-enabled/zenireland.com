@@ -15,7 +15,7 @@ server {
 
     #server_name 109.74.205.194;
     server_name www.zenireland.com;
-    root /home/zen/zenireland/www/_site;
+    root /home/zen/zenireland/_site;
 
     #location /jekyll {
     #    alias /home/zen/zenireland.jekyll/_site;
