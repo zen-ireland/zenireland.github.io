@@ -20,4 +20,15 @@ server {
     #location /jekyll {
     #    alias /home/zen/zenireland.jekyll/_site;
     #}
+
+    location ~* \.(?:jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp4|ogg|ogv|webm|htc)$ {
+      expires 1M;
+      add_header Cache-Control "public";
+    }
+
+    location ~* \.(?:css|js)$ {
+      expires 1h;
+      add_header Cache-Control "public";
+    }
+
 }
