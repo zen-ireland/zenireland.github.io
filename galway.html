@@ -1,18 +1,13 @@
 ---
-layout: default
 title: Galway
+layout: default
 ---
-    <div class="large-12 columns about-content">
+
+<div class="large-12 columns about-content">
       <div class="large-6 columns">
         <h4>Galway Dojo</h4>
-        <h5>Aras na nGael, 45 Dominick Street (2nd floor)</h5>
-        <hr/>
-        <br/>
-
-	<h5>Upcoming Events: </h5>
-	<p>There will be a Zen day in the Galway Zen Dojo on Sunday 26th of May from 9am until 5pm. Come for all or part of the day.</p>
-        <p>For information please email: <script type="text/javascript">var a = new Array('.com','zengalway','@gmail', '?', 'subject=Galway Zendo');document.write("<a href='mailto:"+a[1]+a[2]+a[0]+a[3]+a[4]+"'>"+a[1]+a[2]+a[0]+"</a>");</script> or call Tom: (086) 351 2750
-        </p>
+				<h5>Aras na nGael, 45 Dominick Street (2nd floor) - <a href="#dojo-map">map</a></h5>
+      	<p>The daily meditation schedule is set out <a href="#galway-timetable">below</a>.</p>
 
         <div class="fb-page" data-href="https://www.facebook.com/GalwayZenDojo" data-tabs="" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
           <blockquote cite="https://www.facebook.com/GalwayZenDojo" class="fb-xfbml-parse-ignore">
@@ -20,19 +15,39 @@ title: Galway
           </blockquote>
         </div>
 
+	<h5>Upcoming Events: </h5>
+	
+	  {% for post in site.posts %}
+    {% if post.categories contains 'galway' %}
+      <div>
+        <h5>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          <small style="margin-left: 20px">
+            {{ post.date | date_to_string }}
+          </small>
+        </h5>
+        {{ post.content }}
+      </div>
+    {% endif %}
+  {% endfor %}
+
+
+      </div>
+
+<div class="large-6 columns imgmap">
+        <img src="./img/Gway_ext.jpg" style="
+    height: 340px;
+">
+
         <ul class="pricing-table athenry">
-          <li class="title">Meditation times:</li>
+          <li class="title"><a id="galway-timetable"></a>Meditation times:</li>
           <li class="description"><p>Please arrive 10 minutes beforehand.</p><p>Beginners please come on a Tuesday at 6.15pm for a basic introduction</p></li>
           <li class="bullet-item">Monday: 6.30pm</li>
           <li class="bullet-item">Tuesday: 7.00am and 6.30pm</li>
           <li class="bullet-item">Wednesday: 7 00am and 6.30pm</li>
           <li class="bullet-item">Thursday: 7 00am</li>
         </ul>
-      </div>
-      <div class="large-6 columns imgmap">
-        <img src="./img/Gway_ext.jpg" style="
-    height: 340px;
-">
-        <div class='embed-container'><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2386.043512954121!2d-9.057302000000002!3d53.27084!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b96fbad50d133%3A0x17e922d9137a3cd7!2s%C3%81ras+na+nGael!5e0!3m2!1sen!2sie!4v1416243012516" width="455" height="300" frameborder="0" style="border:0"></iframe></div>
+				
+				<div class='embed-container'><a id="dojo-map"></a><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2386.043512954121!2d-9.057302000000002!3d53.27084!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b96fbad50d133%3A0x17e922d9137a3cd7!2s%C3%81ras+na+nGael!5e0!3m2!1sen!2sie!4v1416243012516" width="455" height="300" frameborder="0" style="border:0"></iframe></div>
       </div>
     </div>

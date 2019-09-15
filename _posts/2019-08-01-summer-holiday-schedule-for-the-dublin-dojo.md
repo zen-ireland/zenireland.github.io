@@ -1,11 +1,11 @@
 ---
-layout: post
 title: Summer Holiday Schedule for the Dublin Dojo
-date:   2019-08-01 10:21:19 +0000
+layout: post
+date: '2019-08-01 10:21:19 +0000'
 categories: dublin
 ---
 
-Morning Zazen will continue as normal. 
+Morning Zazen will continue as normal, for the summer.
 
 There will be no evening zazen on Wednesdays and Sundays for the month of August or the first week of September. 
 
