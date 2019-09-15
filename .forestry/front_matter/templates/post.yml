@@ -1,0 +1,23 @@
+---
+label: post
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+  hidden: false
+  default: post
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+  default: now
+  config:
+    required: true
+- type: text
+  name: categories
+  label: categories
+pages:
+- _posts/2019-08-08-test-post.md
