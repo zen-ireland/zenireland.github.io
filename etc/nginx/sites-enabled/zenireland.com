@@ -31,17 +31,37 @@ server {
       add_header Cache-Control "public";
     }
 
-    #location /admin {
-    #    proxy_pass http://127.0.0.1:4000/admin;
-    #
-    #    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    #    proxy_set_header X-Forwarded-Proto $scheme;
-    #    proxy_set_header X-Real-IP $remote_addr;
-    #    proxy_set_header Host $http_host;
+    location ^~ /admin {
+        auth_basic "Administration";
+        auth_basic_user_file /home/zen/zenireland/etc/nginx/sites-enabled/htpasswd;
 
-    #    #proxy_max_temp_file_size 0;
-    #    proxy_buffering on;
-    #    proxy_buffers 16 16k;
-    #    proxy_buffer_size 16k;
-    #}
+        proxy_pass http://127.0.0.1:4000/admin;
+
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header Host $http_host;
+
+        #proxy_max_temp_file_size 0;
+        proxy_buffering on;
+        proxy_buffers 16 16k;
+        proxy_buffer_size 16k;
+    }
+
+    location ^~ /_api {
+        auth_basic "Administration";
+        auth_basic_user_file /home/zen/zenireland/etc/nginx/sites-enabled/htpasswd;
+
+        proxy_pass http://127.0.0.1:4000/_api;
+
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header Host $http_host;
+
+        #proxy_max_temp_file_size 0;
+        proxy_buffering on;
+        proxy_buffers 16 16k;
+        proxy_buffer_size 16k;
+    }
 }
