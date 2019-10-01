@@ -1,10 +1,18 @@
 ---
 title: Rohatsu Retreat 2019
+layout: post
 categories: sesshin
+event_date: '2019-11-30'
 ---
 
-A week long silent Rohatsu sesshin will be held on the Aran Islands from the 30th November to 7th December 2019. 
+A week long silent meditation retreat commemorating the Buddha's enlightenment will be held on the Aran Islands from the 30th November to 7th December 2019.
 
-The sesshin will be led by Alain Tainan Leibmann who received Dharma Transmission from Koshu Itabashi Zenji of Sojiji and Gotanjoji temples in Japan.
+This sesshin will be led by Alain Liebmann.
 
-See [here](http://www.zenireland.com/img/Rohatsu_in_Ireland_2019.pdf) for the poster with full details.
+Alain is currently teaching in France and leading sesshins in a few other countries. He lived in Ireland for over twenty years and introduced many people to zazen. He is one of the students of Master Deshimaru and received Dharma Transmission from Koshu Itabashi Zenji.
+
+We don't recommend this event for beginners as it's intense.
+
+See [here](http://www.zenireland.com/img/Rohatsu_in_Ireland_2019.jpg) for the poster with full details.
+
+![Poster](http://www.zenireland.com/img/Rohatsu_in_Ireland_2019.jpg)

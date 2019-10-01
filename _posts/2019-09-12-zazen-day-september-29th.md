@@ -2,6 +2,7 @@
 title: Zazen Day - Dublin - September 29th
 categories: dublin
 layout: post
+event_date: '2019-09-29'
 ---
 
 There will be a Zazen Day at Earth+Sky Dojo, Dublin on Sunday, September 29. 

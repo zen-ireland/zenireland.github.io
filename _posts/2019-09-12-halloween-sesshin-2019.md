@@ -2,6 +2,7 @@
 title: Halloween Sesshin 2019
 layout: post
 categories: sesshin
+event_date: '2019-10-25'
 ---
 
 The annual Hallowe'en Sesshin will be held at the Redemptorist Retreat Centre in Esker, Athenry, Co. Galway. H65 XA36
@@ -14,3 +15,5 @@ Food: Vegetarian, & mostly vegan.
 
 Travel: by train, bus, car, Dublin - Athenry or Galway - Athenry
 (If coming by train contact us in advance to be picked up at train station)
+
+![Poster](http://www.zenireland.com/img/Poster_Halloween_2019-edited.jpg)
