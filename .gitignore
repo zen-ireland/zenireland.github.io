@@ -35,6 +35,8 @@ tmp/
 public_ftp/
 public_html/
 www/scss/.sass-cache/
+img/
+etc/nginx/sites-enabled/htpasswd
 
 # IDE
 /.idea/
@@ -43,3 +45,4 @@ www/scss/.sass-cache/
 _site
 .sass-cache
 .jekyll-metadata
+.jekyll-cache
