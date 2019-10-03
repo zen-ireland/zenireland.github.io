@@ -13,13 +13,25 @@ server {
     listen 80;
     listen [::]:80;
 
-    #server_name 109.74.205.194;
     server_name www.zenireland.com;
     root /home/zen/zenireland/_site;
 
-    #location /jekyll {
-    #    alias /home/zen/zenireland.jekyll/_site;
-    #}
+    location ~ ^/(admin|_api)(/.*)? {
+      auth_basic_user_file /home/zen/zenireland/etc/nginx/sites-enabled/htpasswd;
+      auth_basic "Administration";
+
+      proxy_pass http://127.0.0.1:4000/$1$2;
+
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_set_header X-Forwarded-Proto $scheme;
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_set_header Host $http_host;
+
+      #proxy_max_temp_file_si
+      proxy_buffering on;
+      proxy_buffers 16 16k;
+      proxy_buffer_size 16k;
+    }
 
     location ~* \.(?:jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp4|ogg|ogv|webm|htc)$ {
       expires 1M;
@@ -31,37 +43,4 @@ server {
       add_header Cache-Control "public";
     }
 
-    location ^~ /admin {
-        auth_basic "Administration";
-        auth_basic_user_file /home/zen/zenireland/etc/nginx/sites-enabled/htpasswd;
-
-        proxy_pass http://127.0.0.1:4000/admin;
-
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header Host $http_host;
-
-        #proxy_max_temp_file_size 0;
-        proxy_buffering on;
-        proxy_buffers 16 16k;
-        proxy_buffer_size 16k;
-    }
-
-    location ^~ /_api {
-        auth_basic "Administration";
-        auth_basic_user_file /home/zen/zenireland/etc/nginx/sites-enabled/htpasswd;
-
-        proxy_pass http://127.0.0.1:4000/_api;
-
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header Host $http_host;
-
-        #proxy_max_temp_file_size 0;
-        proxy_buffering on;
-        proxy_buffers 16 16k;
-        proxy_buffer_size 16k;
-    }
 }

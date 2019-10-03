@@ -1,0 +1,33 @@
+[Unit]
+Description=zenireland.com
+Requires=network.target
+ 
+[Service]
+Type=simple
+User=zen
+Group=zen
+WorkingDirectory=/home/zen/zenireland
+ExecStart=/home/zen/gems/bin/bundle exec /home/zen/gems/bin/jekyll serve -V --trace
+TimeoutSec=30
+RestartSec=15s
+Restart=always
+
+Environment=GEM_HOME=/home/zen/gems
+#Environment=PATH=/home/zen/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+
+NoNewPrivileges=yes
+PrivateTmp=yes
+PrivateDevices=yes
+DevicePolicy=closed
+ProtectSystem=strict
+ReadWritePaths=/home/zen/zenireland
+ReadOnlyPaths=/home/zen/zenireland/etc /home/zen/zenireland/bower_components/
+ProtectControlGroups=yes
+ProtectKernelModules=yes
+ProtectKernelTunables=yes
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6 AF_NETLINK
+RestrictRealtime=yes
+RestrictNamespaces=yes
+ 
+[Install]
+WantedBy=multi-user.target
