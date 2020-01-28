@@ -1,6 +1,6 @@
 ---
 title: Summer Holiday Schedule for the Dublin Dojo
-layout: post
+
 date: '2019-08-01 10:21:19 +0000'
 categories: dublin
 ---

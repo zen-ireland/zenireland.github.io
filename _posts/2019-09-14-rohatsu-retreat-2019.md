@@ -1,11 +1,11 @@
 ---
 title: Rohatsu Retreat 2019
-layout: post
+
 categories: sesshin
-event_date: '2019-11-30'
+date: '2019-11-30'
 ---
 
-A week long silent meditation retreat commemorating the Buddha's enlightenment will be held on the Aran Islands from the 30th November to 7th December 2019.
+A week long silent meditation retreat commemorating the Buddha's enlightenment will be held in Esker Redemptorist Monastery, Athenry, Co. Galway from the 30th November to 7th December 2019.
 
 This sesshin will be led by Alain Liebmann.
 
@@ -13,6 +13,6 @@ Alain is currently teaching in France and leading sesshins in a few other countr
 
 We don't recommend this event for beginners as it's intense.
 
-See [here](http://www.zenireland.com/img/Rohatsu_in_Ireland_2019.jpg) for the poster with full details.
+See [here](http://www.zenireland.com/img/Rohatsu_Esker.jpg) for the poster with full details.
 
-![Poster](http://www.zenireland.com/img/Rohatsu_in_Ireland_2019.jpg)
+![Poster](http://www.zenireland.com/img/Rohatsu_Esker.jpg)

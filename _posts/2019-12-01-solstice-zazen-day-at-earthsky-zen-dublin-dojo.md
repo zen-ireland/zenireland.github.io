@@ -1,7 +1,7 @@
 ---
 title: Solstice Zazen Day at Earth+Sky Zen, Dublin Dojo
 categories: dublin
-date_event: '2019-12-22'
+date: '2019-12-22'
 ---
 
 There will be a Zazen Day on Sunday, December 22nd, starting at 11am and finishing at 6: 45pm. The day will be led by Mary Soshin Laheen. Mary is a teacher in the White Plum (Maezumi) Lineage, she recently received dharma transmission from Robert Kennedy Roshi. Sensai Mary will offer Daisan (one to one meetings about zazen practice) in the afternoon. 

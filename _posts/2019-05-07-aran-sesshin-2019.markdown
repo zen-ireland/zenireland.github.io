@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title:  "Summer Sesshin 2019"
 date:   2019-05-07 09:55:31 +0000
 categories: sesshin

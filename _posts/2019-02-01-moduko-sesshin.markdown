@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title:  "Mokudo Sesshin 2019"
 date:   2019-02-01 12:32:19 +0000
 categories: sesshin

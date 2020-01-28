@@ -1,8 +1,8 @@
 ---
 title: Halloween Sesshin 2019
-layout: post
+
 categories: sesshin
-event_date: '2019-10-25'
+date: '2019-10-25'
 ---
 
 The annual Hallowe'en Sesshin will be held at the Redemptorist Retreat Centre in Esker, Athenry, Co. Galway. H65 XA36

@@ -1,7 +1,7 @@
 ---
 title: Zazen Day in Dublin Dojo - Sunday February 2nd
 layout: post
-date_event: '2020-02-02 16:30:00'
+date: '2020-02-02 16:30:00'
 categories: dublin
 ---
 

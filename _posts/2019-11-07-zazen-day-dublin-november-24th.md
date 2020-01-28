@@ -2,7 +2,7 @@
 title: Zazen Day - Dublin - November 24th
 categories: dublin
 
-date_event: '2019-11-24'
+date: '2019-11-24'
 ---
 
 There will be a Zazen Day at Earth+Sky Dojo on Sunday, November 24th.

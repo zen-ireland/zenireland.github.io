@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title:  "Limerick Group"
 date:   2019-04-10 12:05:01 +0000
 categories: limerick
