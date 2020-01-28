@@ -6,12 +6,12 @@ layout: default
 <h4>News - Upcoming Events in the Irish Sangha</h4>
 {% assign posts_by_event_date = site.posts | sort: "date" | sort: "event_date" %}
 {% for post in  posts_by_event_date reversed %}
-   <div class="homepage-post-summary">
-	  <h5>
-		   <a href="{{ post.url }}">{{ post.title }}</a>
-			 <small style="margin-left: 20px">{{ post.date | date_to_string }}</small>
-		</h5>
+<div class="homepage-post-summary">
+  <h5>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <small style="margin-left: 20px">{{ post.date | date_to_string }}</small>
+  </h5>
 
-      {{ post.content }}
-		</div>
+  {{ post.content }}
+</div>
 {% endfor %}
