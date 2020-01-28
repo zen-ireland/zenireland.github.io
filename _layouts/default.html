@@ -6,12 +6,31 @@
   <title>{{ page.title }} - Zen in Ireland</title>
   <link rel="stylesheet" href="/stylesheets/app.css" />
   <script src="/bower_components/modernizr/modernizr.js"></script>
+  {% seo %}
 </head>
 
 <body>
 
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=169303746469264&autoLogAppEvents=1"></script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '595316791280261',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v5.0'
+    });
+  };
+</script>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+<script>
+   function shareFB() {
+       FB.ui({
+        method: 'share',
+       },
+       function(response){});
+   }
+</script>
 
 <section class="about">
   <div class="row">
@@ -30,7 +49,7 @@
                 <li><a href="/dublin.html">Dublin</a></li>
                 <li><a href="/galway.html">Galway</a></li>
                 <li><a href="/limerick.html">Limerick</a></li>
-		<li><a href="http://spaceformeditation.blogspot.com/p/inspiration.html">Ranelagh</a></li>
+                <li><a href="http://spaceformeditation.blogspot.com/p/inspiration.html">Ranelagh</a></li>
                 <li><a href="/cork.html">Cork</a></li>
               </ul>
               <li><a href="/index.html#contact" class="small button">Contact</a></li>
@@ -90,9 +109,9 @@
     </div>
     <div class="large-6 columns">
       <ul class="inline-list right">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/index.html#contact">Contact</a></li>
       </ul>
     </div>
   </div>

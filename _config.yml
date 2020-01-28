@@ -15,6 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Zen In Ireland
 email: zeninireland@gmail.com
+tagline: A group of Zen practicioners in the Dshimaru lineage.
 description: >- # this means to ignore newlines until "baseurl:"
    A group of Zen practicioners in the Dshimaru lineage. 
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -27,6 +28,7 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -41,3 +43,18 @@ exclude:
   - vendor/ruby/
   - etc/
   - serve.sh
+  - config.codekit
+  - package.json
+  - bower.json
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+
+facebook:
+  app_id: 595316791280261
+  publisher: https://www.facebook.com/earthandskyzen/
