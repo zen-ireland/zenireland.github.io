@@ -16,4 +16,4 @@ Food: Vegetarian, & mostly vegan.
 Travel: by train, bus, car, Dublin - Athenry or Galway - Athenry
 (If coming by train contact us in advance to be picked up at train station)
 
-![Poster](http://www.zenireland.com/img/Poster_Halloween_2019-edited.jpg)
+![Poster](/img/Poster_Halloween_2019-edited.jpg)

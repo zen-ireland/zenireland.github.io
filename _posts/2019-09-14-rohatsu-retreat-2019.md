@@ -13,6 +13,6 @@ Alain is currently teaching in France and leading sesshins in a few other countr
 
 We don't recommend this event for beginners as it's intense.
 
-See [here](http://www.zenireland.com/img/Rohatsu_Esker.jpg) for the poster with full details.
+See [here](/img/Rohatsu_Esker.jpg) for the poster with full details.
 
-![Poster](http://www.zenireland.com/img/Rohatsu_Esker.jpg)
+![Poster](/img/Rohatsu_Esker.jpg)
