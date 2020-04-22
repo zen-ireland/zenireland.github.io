@@ -54,6 +54,7 @@ defaults:
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "post"
+      categories: "zen"
 
 facebook:
   app_id: 595316791280261
