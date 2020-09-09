@@ -33,7 +33,7 @@ layout: default
   <h3>News</h3>
 
   {% for post in site.posts %}
-  {% if post.categories contains 'dublin' %}
+  {% if post.categories contains 'dublin' or post.categories contains 'Dublin' %}
   <div>
     <h5>
       <a href="{{ post.url }}">{{ post.title }}</a>
