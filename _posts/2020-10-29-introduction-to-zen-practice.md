@@ -1,6 +1,6 @@
 ---
 title: Introduction to Zen Practice
-layout: Dublin
+layout: post
 categories: Dublin
 ---
 

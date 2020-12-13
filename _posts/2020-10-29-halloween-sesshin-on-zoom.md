@@ -1,6 +1,6 @@
 ---
 title: Halloween Sesshin (on zoom)
-layout: Dublin
+layout: post
 categories: Dublin
 ---
 
