@@ -19,5 +19,3 @@ fields:
 - type: text
   name: categories
   label: categories
-pages:
-- _posts/2019-08-08-test-post.md
