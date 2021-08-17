@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: document
+  path: pages/dublin.html
+  label: Dublin
+  match: "**/*"
 - type: heading
   label: stuff
 - type: jekyll-pages
