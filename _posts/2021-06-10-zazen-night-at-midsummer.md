@@ -9,7 +9,7 @@ On Saturday, June 19, Earth + Sky Zen will host a Zazen Night via zoom, starting
 
 All are welcome. Send us an email if you would like to join, and for information about the zoom link and password.
 
-[Poster here]({{ 'img/Zazen_Night.pdf' | relative_url }})
+[Poster here]({{ 'img/Zazen_Night.pdf' }})
 
 !\[\]({{'img/Zazen_Night.jpg' | relative_url}})
 
