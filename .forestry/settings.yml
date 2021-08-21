@@ -16,9 +16,9 @@ sections:
   label: Posts
   create: all
 upload_dir: ''
-public_path: "/media"
+public_path: https://zenireland.s3.eu-west-1.amazonaws.com
 front_matter_path: ''
-use_front_matter_path: 
+use_front_matter_path: true
 file_template: ":filename:"
 build:
   preview_env:
