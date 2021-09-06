@@ -19,3 +19,5 @@ fields:
 - type: text
   name: categories
   label: categories
+pages:
+- _posts/re-opening-dublin-dojo.md
