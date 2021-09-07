@@ -5,6 +5,6 @@ title: Re-opening Dublin Dojo
 categories: Dublin
 
 ---
-We re-opened the Dublin Dojo on September 1st.
+We re-opened the Dublin Dojo on September 1st, with restrictions in accordance with government guidelines, send an email if you would like to join us for zazen practice.
 
 ![](https://zenireland.s3.eu-west-1.amazonaws.com/Dubin dojo pic.jpg)
