@@ -8,5 +8,5 @@ The next Mokudo Sesshin, organised by the <a href="https://zensimplysitting.org/
 
 The Mokudo Sesshin is held each year in honour of Taisen Deshimaru in a different country. We expect a number of practitioners from France, Spain, Germany, Hungary and the UK to attend.
 
-![Mokudo sesshin poster](img/Flyer_MOKUDO_2019.png "Mokudo sesshin poster")
+![Mokudo sesshin poster](/img/Flyer_MOKUDO_2019.png "Mokudo sesshin poster")
 

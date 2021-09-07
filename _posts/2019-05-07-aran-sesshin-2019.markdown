@@ -15,4 +15,4 @@ Departure: after lunch on 10th August.
 
 Teaching: Tom Cleary, Mary Laheen
 
-![Summer sesshin poster](img/Poster_Aran_2019.png "Summer sesshin poster")
+![Summer sesshin poster](/img/Poster_Aran_2019.png "Summer sesshin poster")

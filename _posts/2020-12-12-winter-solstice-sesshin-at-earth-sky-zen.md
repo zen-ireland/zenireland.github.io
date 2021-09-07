@@ -12,6 +12,6 @@ If you would like to join us, please send an email to zen.in.ireland@gmail.com f
 
 The zoom link is:  [https://us02web.zoom.us/j/89834251202](https://us02web.zoom.us/j/89834251202)
 
-[Poster Here]({{ 'WINTER_SOLSTICE_2020_.pdf' | relative_url }})
+[Poster Here]({{ '/img/WINTER_SOLSTICE_2020_.pdf' }})
 
-![]({{ 'WINTER_SOLSTICE_2020_.jpg' | relative_url }})
+![]({{ '/img/WINTER_SOLSTICE_2020_.jpg' }})
