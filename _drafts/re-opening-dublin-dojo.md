@@ -1,10 +1,8 @@
 ---
 layout: post
-date: 2021-09-06 08:01:59 +0000
+date: 2021-09-06T08:01:59.000+00:00
 title: Re-opening Dublin Dojo
 categories: Dublin
 
 ---
-We re-opened the Dublin Dojo on September 1st, with restrictions in accordance with government guidelines, send an email if you would like to join us for zazen practice.
-
-![](https://zenireland.s3.eu-west-1.amazonaws.com/Dubin dojo pic.jpg)
+Earth+Sky Zen at the Dublin Dojo has opened again for a full schedule of zazen practice, having been closed for 18 months due to the pandemic. All welcome! Please contact us be email before coming as we must comply with government guidelines for Covid., ![](https://zenireland.s3.eu-west-1.amazonaws.com/Dojo_Opening.jpg)
