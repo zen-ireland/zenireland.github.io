@@ -5,4 +5,6 @@ title: Re-opening Dublin Dojo
 categories: Dublin
 
 ---
-Earth+Sky Zen at the Dublin Dojo has opened again for a full schedule of zazen practice, having been closed for 18 months due to the pandemic. All welcome! Please contact us be email before coming as we must comply with government guidelines for Covid., ![](https://zenireland.s3.eu-west-1.amazonaws.com/Dojo_Opening.jpg)
+Earth+Sky Zen at the Dublin Dojo has opened again for a full schedule of zazen practice, having been closed for 18 months due to the pandemic. All welcome! Please contact us by email before coming as we must comply with government guidelines for Covid.
+
+ ![](https://zenireland.s3.eu-west-1.amazonaws.com/Dojo_Opening.jpg)
