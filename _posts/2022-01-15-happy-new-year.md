@@ -2,7 +2,7 @@
 layout: post
 date: 2022-01-15 12:56:35 +0000
 title: Happy New Year!
-categories: ''
+categories: Dublin
 
 ---
 Áthbhliain faoi mhaise daoibh go léir!![](https://zenireland.s3.eu-west-1.amazonaws.com/mountain.jpg)
