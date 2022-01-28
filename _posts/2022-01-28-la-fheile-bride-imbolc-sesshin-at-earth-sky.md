@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-01-28 20:01:57 +0000
-title: 'Lá Fhéile Bríde & Imbolc Sesshin at Earth+Sky '
+title: Lá Fhéile Bríde & Imbolc Sesshin at Earth+Sky Zen Dublin Dojo
 categories: Dublin
 
 ---
