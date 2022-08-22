@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-08-22 13:46:44 +0000
-title: Calligraphy Course Online with Yingge Xu
+title: Zen Mind in East Asian Calligraphy with Yingge Xu
 categories: Dublin
 
 ---
