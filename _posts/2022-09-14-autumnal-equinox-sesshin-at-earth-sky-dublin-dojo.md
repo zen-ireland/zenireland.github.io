@@ -9,4 +9,4 @@ Starting on Saturday evening, September 25th, there will be an in-person  and on
 
 Suggested donation: €50 in-person, €25 online.
 
-If you would like to join us or need more information![](https://zenireland.s3.eu-west-1.amazonaws.com/AUTUMNALequinox22_sesshin.jpg), drop us a line by email.
+If you would like to join us or need more information drop us a line by email.![](https://zenireland.s3.eu-west-1.amazonaws.com/AUTUMNALequinox22_sesshin.jpg), drop us a line by email.
