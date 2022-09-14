@@ -5,7 +5,7 @@ title: Autumnal Equinox Sesshin at Earth+Sky Dublin dojo
 categories: Dublin
 
 ---
-Starting on Saturday evening, September 25th, there will be an in-person  and online sesshin led by Roshi Robert Kennedy and Mary Laheen Sensei at the Dublin Dojo. The sesshin will run through Sunday and end after zazen on Monday morning.
+Starting on Saturday evening, September 24th, there will be an in-person  and online sesshin led by Roshi Robert Kennedy and Mary Laheen Sensei at the Dublin Dojo. The sesshin will run through Sunday and end after zazen on Monday morning.
 
 Suggested donation: €50 in-person, €25 online.
 
