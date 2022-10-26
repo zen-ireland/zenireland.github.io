@@ -5,12 +5,10 @@ title: Zazen Afternoon for Beginners, Sunday November 6th
 categories: Dublin
 
 ---
-Sunday, November 6th, we welcome you to our Dublin Dojo for a half-day sesshin (meditation retreat).
+This is an opportunity for beginners who would like to experience zen practice in a group.
 
-This is perfect for beginners who would like to experience a longer meditation in a group.
+Arrival at 4pm, quick introduction to zazen (sitting meditation) and kinhin (meditative walking) at 4.15pm.
 
-Arrival at 4pm, quick introduction to zazen and kinhin (meditative walking) at 4.15pm.
+The first part finishes at 5.30pm with a circle of discussion and a chance to ask questions.
 
-The first part finishes at 5.30pm with a circle of discussion and opportunity to ask questions.
-
-You are then welcomed to stay for our regular Sunday evening zazen programme 6.15 – 7.30pm.
+You are then welcome to stay for our regular Sunday evening zazen programme 6.15 – 7.30pm.
