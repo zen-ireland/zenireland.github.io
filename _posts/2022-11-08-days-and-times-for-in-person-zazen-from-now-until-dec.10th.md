@@ -5,6 +5,6 @@ title: " Days and times for in-person zazen from now until Dec.10th."
 categories: Dublin
 
 ---
-The dojo will be open for in-person sitting on Tuesday mornings 7am - 8:10am, Wednesday and Sunday evening from 6:15pm - 7:20pm. AFter December 10th the full schedule of in-person sitting at the dojo will resume.
+The dojo will be open for in-person sitting on Tuesday mornings 7am - 8:10am, Wednesday and Sunday evening from 6:15pm - 7:20pm. After December 10th the full schedule of in-person sitting at the dojo will resume.
 
 Online sittings at the regular schedule continue as before.
