@@ -1,10 +1,10 @@
 ---
 layout: post
 date: 2022-11-08 11:09:22 +0000
-title: " Days and times for in-person zazen at Earth+Sky from now until Dec.10th."
+title: Open for in-person sitting at the Dublin Dojo
 categories: Dublin
 
 ---
-The Dublin dojo will be open for in-person sitting on Wednesday and Sunday evenings from 6:15pm - 7:20pm. After December 10th the full schedule of in-person sitting at the dojo will resume.
+The Dublin dojo is open for the full schedule of in-person sitting, Monday through Thursday at 7am for about 1 hour and, Wednesday and Sunday evenings from 6:15pm - 7:20pm. These sittings are also available online.
 
-Online sittings at the regular schedule continue as before.
+If you wish to join online, please send an email for the link.
