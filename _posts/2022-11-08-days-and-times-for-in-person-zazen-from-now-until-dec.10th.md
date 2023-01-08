@@ -1,10 +1,12 @@
 ---
 layout: post
 date: 2022-11-08 11:09:22 +0000
-title: Open for in-person sitting at the Dublin Dojo
+title: Happy New Year!
 categories: Dublin
 
 ---
-The Dublin dojo is open for the full schedule of in-person sitting, Monday through Thursday at 7am for about 1 hour and, Wednesday and Sunday evenings from 6:15pm - 7:20pm. These sittings are also available online.
+Happy New Year to all!
+
+![](https://zenireland.s3.eu-west-1.amazonaws.com/Happy New Year!.jpg)The Dublin dojo is open again for the full schedule of in-person sitting, Monday through Thursday at 7am to 8:10am, Wednesday and Sunday evenings from 6:15pm - 7:20pm. These sittings are also available online.
 
 If you wish to join online, please send an email for the link.
