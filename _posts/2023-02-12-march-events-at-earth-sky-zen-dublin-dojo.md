@@ -5,13 +5,13 @@ title: March Events at Earth+Sky Zen Dublin Dojo
 categories: Dublin
 
 ---
-**March 4th**: **Zazen Day / Short Ssshin** with Grey Heron Sangha
+**March 4th**: **Zazen Day / Short Sesshin** with Grey Heron Sangha
 
 Venue and details to be confirmed.
 
 **March 11th and 12th**:  **A Weekend Meditative Brush-Painting Retreat**. Oriental Brush Painting / Sumie Workshop - Bamboo -
 
-with Yingge Xu and Mary Soshin Laheen, for information see 
+with Yingge Xu and Mary Soshin Laheen, for information see
 
 [https://www.artofthebrush.ie/post/oriental-brush-painting-sumie-workshop-bamboo](https://www.artofthebrush.ie/post/oriental-brush-painting-sumie-workshop-bamboo "https://www.artofthebrush.ie/post/oriental-brush-painting-sumie-workshop-bamboo")
 
