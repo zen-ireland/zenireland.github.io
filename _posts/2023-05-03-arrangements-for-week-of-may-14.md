@@ -2,7 +2,7 @@
 layout: post
 date: 2023-05-03 08:56:09 +0000
 title: Arrangements for the Week of May 14th
-categories: Dublin
+categories: dublin
 
 ---
 The dojo will be closed for morning zazen during the week of May 14th to May 21st, (online and in person).

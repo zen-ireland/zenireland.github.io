@@ -1,10 +1,11 @@
 ---
 layout: post
-date: 2023-02-12 09:08:05 +0000
+date: '2023-02-12 09:08:05 +0000'
 title: March Events at Earth+Sky Zen Dublin Dojo
-categories: Dublin
-
+categories: dublin
+_template: post
 ---
+
 **March 4th**: **Zazen Day / Short Sesshin** with Grey Heron Sangha
 
 Venue and details to be confirmed.

@@ -39,14 +39,27 @@ jobs:
           ruby-version: '3.1' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+          cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
-      - name: Build with Jekyll
-        # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+      - name: Install dependencies
+        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+#     - name: Build with Jekyll
+#       # Outputs to the './_site' directory by default
+#       run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+#       env:
+#         JEKYLL_ENV: production
+      - name: build TinaCMS
         env:
-          JEKYLL_ENV: production
+          TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
+          TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+        #  run: ${{ steps.detect-package-manager.outputs.manager }} tinacms build 
+        run: npx tinacms build
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v1
