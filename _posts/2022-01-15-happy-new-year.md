@@ -1,11 +1,10 @@
 ---
 layout: post
-date: '2022-01-15 12:56:35 +0000'
+date: 2022-01-15 12:56:35 +0000
 title: Happy New Year!
-categories: dublin
-_template: post
----
+categories: Dublin
 
+---
 Áthbhliain faoi mhaise daoibh go léir!![](https://zenireland.s3.eu-west-1.amazonaws.com/mountain.jpg)
 
 From Tuesday January 4th, we have begun to zoom zazen again from Earth + Sky at the Dublin dojo. The physical dojo will remain closed until the end of January. 

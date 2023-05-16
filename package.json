@@ -1,19 +1,10 @@
 {
-  "name": "zenireland.github.io",
-  "version": "1.0.0",
-  "description": "This is a template to start your own project that uses Grunt and libsass!",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "name": "foundation-libsass-template",
+  "version": "0.0.1",
   "devDependencies": {
-    "npm-check-updates": "^16.10.12"
-  },
-  "dependencies": {
-    "@tinacms/cli": "^1.5.12",
-    "tinacms": "^1.5.5"
+    "node-sass": "~0.9.3",
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-sass": "~0.8.1"
   }
 }

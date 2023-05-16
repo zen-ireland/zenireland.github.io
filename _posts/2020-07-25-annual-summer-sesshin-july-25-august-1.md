@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: sesshin
+categories: zen
 title: Annual Summer Sesshin July 25 - August 1
 ---
 
