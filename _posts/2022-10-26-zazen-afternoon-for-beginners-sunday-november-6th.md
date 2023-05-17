@@ -1,10 +1,11 @@
 ---
 layout: post
-date: 2022-10-26 15:28:33 +0000
-title: Zazen Afternoon for Beginners, Sunday November 6th
-categories: Dublin
-
+date: '2022-10-26 15:28:33 +0000'
+title: 'Zazen Afternoon for Beginners, Sunday November 6th'
+categories: dublin
+_template: post
 ---
+
 This is an opportunity for beginners who would like to experience zen practice in a group.
 
 Arrival at 4pm, quick introduction to zazen (sitting meditation) and kinhin (meditative walking) at 4.15pm.
