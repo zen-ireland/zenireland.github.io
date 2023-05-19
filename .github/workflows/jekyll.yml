@@ -40,7 +40,6 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
-
       - name: Cache node modules
         id: cache-npm
         uses: actions/cache@v3
@@ -60,6 +59,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
+
       - run: npm ci
 #     - name: Build with Jekyll
 #       # Outputs to the './_site' directory by default
