@@ -30,13 +30,11 @@ export default defineConfig({
             type: 'string',
             label: 'Title',
             name: 'title',
-            required: true,
           },
           {
             type: 'datetime',
             label: 'Date',
             name: 'date',
-            required: true,
           },
           {
             type: 'string',
