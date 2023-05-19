@@ -70,6 +70,7 @@ jobs:
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
           GITHUB_JOB: ${{ github.job }}
         run: npx tinacms build
+      - run: bundle show jekyll
       - run: jekyll build
       - run: ls -l
       - name: Upload artifact
