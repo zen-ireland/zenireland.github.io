@@ -70,6 +70,7 @@ jobs:
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
           GITHUB_JOB: ${{ github.job }}
         run: npx tinacms build
+      - run: ls -l
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v1
