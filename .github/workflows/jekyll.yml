@@ -71,7 +71,7 @@ jobs:
           GITHUB_JOB: ${{ github.job }}
         run: npx tinacms build
       - run: bundle show jekyll
-      - run: jekyll build
+      - run: ./vendor/bundle/ruby/3.1.0/bin/jekyll build
       - run: ls -l
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
