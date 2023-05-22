@@ -65,6 +65,11 @@ export default defineConfig({
                 label: 'Limerick',
               },
             ],
+          },
+          {
+            name: 'image',
+            type: 'image',
+            label: 'Image'
           }
         ],
       }
