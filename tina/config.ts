@@ -37,7 +37,7 @@ export default defineConfig({
             name: 'date',
           },
           {
-            type: 'string',
+            type: 'rich-text',
             label: 'Post Body',
             name: 'body',
             isBody: true,
