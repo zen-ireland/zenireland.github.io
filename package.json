@@ -13,7 +13,7 @@
     "npm-check-updates": "^16.10.12"
   },
   "dependencies": {
-    "@tinacms/cli": "^1.5.12",
-    "tinacms": "^1.5.5"
+    "@tinacms/cli": "^1.5.14",
+    "tinacms": "^1.5.6"
   }
 }
