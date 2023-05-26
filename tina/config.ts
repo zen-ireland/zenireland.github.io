@@ -1,8 +1,17 @@
 import { defineConfig } from "tinacms";
-import { postFields } from "./templates";
+//import { postFields } from "./templates";
+import slugify from "slugify";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
+
+function pad2(x: number) {
+    return x.toString().padStart(2, '0');
+}
+
+function formatDate(d: Date) {
+    return `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`
+}
 
 export default defineConfig({
   branch,
@@ -25,6 +34,17 @@ export default defineConfig({
         label: 'Posts',
         name: 'post',
         path: '_posts',
+         ui: {
+          filename: {
+            // if disabled, the editor can not edit the filename
+            readonly: true,
+            // Example of using a custom slugify function
+            slugify: (values: any) => {
+              // Values is an object containing all the values of the form. In this case it is {title?: string, topic?: string}
+              return `${formatDate(new Date())}-${slugify(values?.title || '')}`
+            },
+          },
+        },
         fields: [
           {
             type: 'string',
