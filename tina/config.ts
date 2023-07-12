@@ -36,9 +36,7 @@ export default defineConfig({
         path: '_posts',
          ui: {
           filename: {
-            // if disabled, the editor can not edit the filename
-            readonly: true,
-            // Example of using a custom slugify function
+            readonly: false,
             slugify: (values: any) => {
               // Values is an object containing all the values of the form. In this case it is {title?: string, topic?: string}
               return `${formatDate(new Date())}-${slugify(values?.title || '')}`
