@@ -39,7 +39,7 @@ export default defineConfig({
             readonly: false,
             slugify: (values: any) => {
               // Values is an object containing all the values of the form. In this case it is {title?: string, topic?: string}
-              return `${formatDate(new Date())}-${slugify(values?.title || '')}`
+              return `${formatDate(new Date())}-${slugify(values?.title || '', {lower: true, strict: true})}`
             },
           },
         },
