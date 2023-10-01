@@ -6,6 +6,7 @@ date: 2023-09-29T23:00:00.000Z
 categories:
   - dublin
   - sesshin
+image: /img/Stillness at Samhain 2023.jpg
 ---
 
 This year Earth+Sky Zen will host the Halloween Sesshin at An Tairseach, the Ecology Centre in Wicklow town, [www.antairseach.ie](http://www.antairseach.ie/)
