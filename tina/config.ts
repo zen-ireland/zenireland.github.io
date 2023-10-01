@@ -13,6 +13,10 @@ function formatDate(d: Date) {
     return `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`
 }
 
+function slugifyTitle(t: string | undefined) {
+    return slugify(t || '', {lower: true, strict: true});
+}
+
 export default defineConfig({
   branch,
   clientId: 'b93c9438-a1c7-4af1-9690-c46b5a0f3c18', // Get this from tina.io
@@ -39,7 +43,7 @@ export default defineConfig({
             readonly: false,
             slugify: (values: any) => {
               // Values is an object containing all the values of the form. In this case it is {title?: string, topic?: string}
-              return `${formatDate(new Date())}-${slugify(values?.title || '', {lower: true, strict: true})}`
+              return `${formatDate(new Date())}-${slugifyTitle(values?.title)}`
             },
           },
         },
