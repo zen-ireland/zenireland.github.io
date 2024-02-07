@@ -1,6 +1,8 @@
 ---
 title: Joint Sesshin -Grey Heron Zendo and Earth+Sky Zen
 date: 2024-02-07T00:00:00.000Z
+categories:
+  - dublin
 image: /img/march 1_sesshin_2024.jpg
 ---
 
