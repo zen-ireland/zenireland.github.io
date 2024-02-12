@@ -8,4 +8,4 @@ image: /img/march 1_sesshin_2024.pdf
 
 Earth+Sky Zen with Grey Heron Zendo will host a sesshin on the first weekend in March at the Dominican Retreat Centre, Tallaght, from Friday evening March 1st to Sunday after lunch, March 3rd. Send an email for more information and if you wish to join us.
 
-![poster](/img/march)
+![](</img/march 1_sesshin_2024.jpg>)
