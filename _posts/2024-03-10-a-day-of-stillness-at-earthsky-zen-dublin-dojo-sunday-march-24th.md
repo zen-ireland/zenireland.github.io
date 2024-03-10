@@ -1,6 +1,8 @@
 ---
 title: 'A Day of Stillness at Earth+Sky Zen Dublin Dojo, Sunday March 24th'
 date: 2024-03-10T00:00:00.000Z
+categories:
+  - dublin
 image: /img/.gemrc
 ---
 
