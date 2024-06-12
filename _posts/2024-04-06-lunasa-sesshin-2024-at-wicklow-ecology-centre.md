@@ -1,6 +1,6 @@
 ---
 title: 'Lúnasa Sesshin 2024 at Wicklow Ecology Centre '
-date: 2024-04-05T23:00:00.000Z
+date: 2024-06-09T23:00:00.000Z
 categories:
   - dublin
 ---
