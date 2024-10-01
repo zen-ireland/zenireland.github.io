@@ -35,7 +35,6 @@ tmp/
 public_ftp/
 public_html/
 www/scss/.sass-cache/
-img/
 etc/nginx/sites-enabled/htpasswd
 
 # IDE
