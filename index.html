@@ -1,17 +1,79 @@
 ---
-title: Home
+title: Dublin - earth+sky
 layout: default
+
 ---
+<div class="large-6 columns">
+  <h4>Earth+Sky Dojo Dublin</h4>
+  <h5>1 Upper Gardiner Street, Dublin 1</h5>
+  <p>The Dublin dojo is at the northwest corner of Mountjoy Square, about a fifteen-minute walk from O'Connell bridge. </p>  <p>Mary Soshin Laheen is the teacher at Earth+Sky Zen. </p>
+  <p>The daily meditation schedule is set out <a href="#dublin-timetable">below. </a>.</p>
+  <p>For information please email: 
+    <script type="text/javascript">
+      var a = new Array('.com','zen.in.','ireland@gmail', '?', 'subject=Dublin Zendo');
+      document.write("<a href='mailto:"+a[1]+a[2]+a[0]+a[3]+a[4]+"'>"+a[1]+a[2]+a[0]+"</a>");
+    </script>
+  </p>
 
-<h4>News - Upcoming Events in the Irish Sangha</h4>
-{% assign posts_by_event_date = site.posts | sort: "date" | sort: "event_date" %}
-{% for post in  posts_by_event_date reversed %}
-<div class="homepage-post-summary">
-  <h5>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    <small style="margin-left: 20px">{{ post.date | date_to_string }}</small>
-  </h5>
+  <div>
+    <p>
+    We accept donations using the following Paypal link:
+      <a href="https://paypal.me/earthskyzen">PayPal.Me/earthskyzen</a>
+    </p>
+  </div>
 
-  {{ post.content |  replace: "img ", "span "  }}
+  <div>
+      <p>
+        Instagram: <a href="https://www.instagram.com/earthskyzen/">earthskyzen</a>
+      </p>
+  </div>
+
+  <div class="fb-page" data-href="https://www.facebook.com/EarthandSkyZenDublin" data-tabs="" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+    <blockquote cite="https://www.facebook.com/EarthandSkyZenDublin" class="fb-xfbml-parse-ignore">
+      <a href="https://www.facebook.com/EarthandSkyZenDublin">Earth + Sky Zen Dublin</a>
+    </blockquote>
+  </div>
+
+  <p></p>
+
+  <h3>News</h3>
+
+  {% for post in site.posts %}
+  {% if post.categories contains 'dublin' or post.categories contains 'Dublin' %}
+  <div>
+    <h5>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <small style="margin-left: 20px">
+        {{ post.date | date_to_string }}
+      </small>
+    </h5>
+    {{ post.content }}
+  </div>
+  {% endif %}
+  {% endfor %}
+
 </div>
-{% endfor %}
+
+
+<div class="large-6 columns imgmap">
+
+  <img src="./img/dublin_dojo.jpg">
+
+
+  <ul class="pricing-table athenry">
+    <li class="title"><a id="dublin-timetable"></a>Meditation times:</li>
+    <li class="description">
+      <p>Please arrive 10 minutes before start.</p><p>Beginners or newcomers to the dojo can arrange an introduction to zazen practice by sending an email.</p>
+      <p>The dojo is closed on the Sunday and Monday of bank holiday weekends.</p>
+    </li>
+    <li class="bullet-item">Monday: 7:30am </li>
+    <li class="bullet-item">Tuesday: 7:30am </li>
+    <li class="bullet-item">Wednesday: 7:30am </li>
+     <li class="bullet-item">Wednesday: 6.15pm</li>
+    <li class="bullet-item">Thursday: 7:30am </li>
+    <li class="bullet-item">Sunday: 6.15pm</li>
+  </ul>
+
+  <div class='embed-container'><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2381.2382624666006!2d-6.259470199999999!3d53.3568907!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e7d65261d05%3A0x4ddc922e3326f18f!2s1+Gardiner+Street+Upper%2C+Dublin+1!5e0!3m2!1sen!2sie!4v1416242946103" width="455" height="300" frameborder="0" style="border:0"></iframe></div>
+
+</div>
