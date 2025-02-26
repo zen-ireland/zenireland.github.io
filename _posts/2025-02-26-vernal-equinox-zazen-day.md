@@ -1,0 +1,9 @@
+---
+title: Vernal Equinox Zazen Day
+date: 2025-02-26T00:00:00.000Z
+categories:
+  - dublin
+image: /Vernal Equinox 2025.jpg
+---
+
+Sunday, March 24th we will have a Zazen Day to mark the Vernal Equinox, starting at 11:00 am and ending after the Sunday evening zazen at 7:30 pm. There will be a dharma talk, as well as zazen and kinin. Organic, vegetarian lunch will be served. Suggested donation €25.
