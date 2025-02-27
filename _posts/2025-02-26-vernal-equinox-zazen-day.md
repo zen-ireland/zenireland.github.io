@@ -6,6 +6,6 @@ categories:
 image: /img/Vernal%20Equinox%202025_1.jpg
 ---
 
-Sunday, March 24th we will have a Zazen Day to mark the Vernal Equinox, starting at 11:00 am and ending after the Sunday evening zazen at 7:30 pm. There will be a dharma talk, as well as zazen and kinin. Organic, vegetarian lunch will be served. Suggested donation €25.
+Sunday, March 23rd we will have a Zazen Day to mark the Vernal Equinox, starting at 11:00 am and ending after the Sunday evening zazen at 7:30 pm. There will be a dharma talk, as well as zazen and kinin. Organic, vegetarian lunch will be served. Suggested donation €25.
 
 ![](/img/Vernal%20Equinox%202025_1.jpg)
