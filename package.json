@@ -13,8 +13,8 @@
     "npm-check-updates": "^17.1.15"
   },
   "dependencies": {
-    "@tinacms/cli": "^1.9.1",
+    "@tinacms/cli": "^1.9.2",
     "slugify": "^1.6.6",
-    "tinacms": "^2.7.1"
+    "tinacms": "^2.7.2"
   }
 }
