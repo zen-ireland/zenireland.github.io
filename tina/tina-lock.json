@@ -110,8 +110,8 @@
       "client": {},
       "media": {
         "tina": {
-          "publicFolder": "img",
-          "mediaRoot": ""
+          "publicFolder": "",
+          "mediaRoot": "img"
         }
       }
     }
