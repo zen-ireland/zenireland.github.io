@@ -7,4 +7,4 @@ categories:
 
 Sunday afternoon, December 15th, The IFI will post a special screening of 'Are We One' - Dónal Ó Céilleachair's film about Roshi Robert Kennedy, please mark your calendars! More info. here: [https://ifi.ie/film/are-we-one-2024/#](https://ifi.ie/film/are-we-one-2024/#)
 
-![](/60598552_336255997283710_8035086097950179328_o.jpg)
+![](</Kollaps - DDR.jpg>)
