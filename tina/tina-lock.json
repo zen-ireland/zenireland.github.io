@@ -1,10 +1,10 @@
 {
   "schema": {
     "version": {
-      "fullVersion": "1.5.13",
+      "fullVersion": "1.5.14",
       "major": "1",
       "minor": "5",
-      "patch": "13"
+      "patch": "14"
     },
     "meta": {
       "flags": [
@@ -111,7 +111,7 @@
       "media": {
         "tina": {
           "publicFolder": "img",
-          "mediaRoot": "img"
+          "mediaRoot": ""
         }
       }
     }
