@@ -10,11 +10,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "npm-check-updates": "^17.1.15"
+    "npm-check-updates": "^18.0.0"
   },
   "dependencies": {
-    "@tinacms/cli": "^1.9.2",
+    "@tinacms/cli": "^1.9.5",
     "slugify": "^1.6.6",
-    "tinacms": "^2.7.2"
+    "tinacms": "^2.7.5"
   }
 }

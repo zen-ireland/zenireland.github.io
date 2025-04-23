@@ -6,3 +6,9 @@ format-tina-lock:
 
 jekyll-build:
     bundle exec jekyll build
+
+ncu:
+    npx ncu
+
+ncuu:
+    npx ncu -u
