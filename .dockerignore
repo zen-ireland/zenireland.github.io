@@ -1,0 +1,10 @@
+.forestry
+.git
+.github
+.gitignore
+.idea
+.jekyll-cache
+etc
+node_modules
+_site
+Dockerfile
