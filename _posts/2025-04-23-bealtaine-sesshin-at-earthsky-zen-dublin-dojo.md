@@ -1,5 +1,8 @@
----
+--
 title: Bealtaine Sesshin at Earth+Sky Zen Dublin Dojo
+date: 2025-04-23T00:00:00.000Z
+categories:
+  - dublin
 image: /img/Bealtaine 2025.jpg
 ---
 
