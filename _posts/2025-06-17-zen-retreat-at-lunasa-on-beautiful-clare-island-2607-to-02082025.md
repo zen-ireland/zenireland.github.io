@@ -7,4 +7,4 @@ categories:
 
 Join us on Clare Island for the summer sesshin hosted by Earth+Sky Zen on beautiful Clare Island. This is a week-long opportunity for zen practice in a peaceful environment. Activities include, zazen (silent meditation) kinhin (walking meditation) outdoors weather permitting, practicing with food preparation, cooking, mindful eating. There will be dharma talks and workshops helping us to engage with the fundamental aspects of practice, such as breathing and posture, chanting and ceremony, sutra study and more.
 
-Please email [zen.in.ireland@gmail.com](mailto:zen.in.ireland@gmail.com) if you want to register.![](</img/Lunasa 2025-Poster.jpg>)
+Please email [zen.in.ireland@gmail.com](mailto:zen.in.ireland@gmail.com) if you want to register.![](</img/Lunasa 2025-Poster.jpg>)![](</img/LÚNASA Sesshin Timetable 2025.jpg>)![](</img/Notes for the Lúnasa Sesshin 2025.jpg>)
