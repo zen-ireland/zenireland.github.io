@@ -36,7 +36,7 @@ h4{font-family:'American Typewriter','Courier New',Courier,Monaco,mono;color:#00
 .button{-webkit-appearance:none;background-color:transparent;border-width:0;text-align:center;box-shadow:0 0 0}
 .button:hover{color:rgba(255,255,255,0.7);background-color:transparent}
 footer p,footer a{font-size:14px}
-.hero-content{padding-top:40px;padding-bottom:40px;background-color:#EAEAEA}
+.hero-content{padding-top:40px;padding-bottom:40px;}
 .about{padding-bottom:50px;background-image:url("../img/Lough_Kee.jpg");background-size:cover;box-shadow:inset 0px 0px 0 2000px rgba(0,0,0,0.2)}
 .panel{margin:40px 0 40px 0;box-shadow:2px 2px 10px rgba(0,0,0,0.2);border:none;background-color:#EAEAEA}
 .large-4 img{box-shadow:2px 2px 10px rgba(0,0,0,0.1)}
