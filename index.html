@@ -3,7 +3,7 @@ title: Home
 layout: default
 ---
 
-<h4>News - Upcoming Events in the Irish Sangha</h4>
+<h4>News - Upcoming Events</h4>
 {% assign posts_by_event_date = site.posts | sort: "date" | sort: "event_date" %}
 {% for post in  posts_by_event_date reversed %}
 <div class="homepage-post-summary">
