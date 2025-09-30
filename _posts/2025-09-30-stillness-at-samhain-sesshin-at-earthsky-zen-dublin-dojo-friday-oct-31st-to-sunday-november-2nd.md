@@ -7,7 +7,7 @@ categories:
   - dublin
 ---
 
-The ancient festival of Samhain, from which our contemporary Hallowe'en comes occurred during the period from sunset on October 31st to sunset on November 1st. It marked the beginning of winter and the transition to a new year. 
+The ancient festival of Samhain from which our contemporary Hallowe'en comes, occurred during the period from sunset on October 31st to sunset on November 1st. It marked the beginning of winter and the transition to a new year, and was a period of spiritual transition for the living and the dead.
 
 At Earth+Sky we will mark the occasion with a sesshin, beginning on Friday evening with zazen at 7:30pm and ending after lunch on Sunday. See poster and timetable here.
 
