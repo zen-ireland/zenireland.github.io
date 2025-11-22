@@ -46,6 +46,7 @@ exclude:
   - config.codekit
   - package.json
   - bower.json
+  - new_site_images
 
 defaults:
   -

@@ -1,0 +1,610 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to bottom, rgba(108, 117, 125, 0.9), rgba(108, 117, 125, 0.7));
+    padding: 20px 0;
+    position: relative;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+nav a.active {
+    background: white;
+    color: #333;
+    padding: 8px 20px;
+}
+
+.hero {
+    position: relative;
+    height: 500px;
+    background: url('../img/Lough_Kee.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 80px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.hero-content p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.hero-content .quote-author {
+    font-size: 13px;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.learn-more-btn:hover {
+    background: white;
+    color: #333;
+}
+
+.teacher-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.teacher-image {
+    flex-shrink: 0;
+}
+
+.teacher-image img {
+    width: 280px;
+    height: auto;
+    display: block;
+}
+
+.teacher-content h2 {
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.teacher-content p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    color: #444;
+}
+
+.news-section {
+    max-width: 1200px;
+    margin: 60px auto 80px;
+    padding: 0 40px;
+}
+
+.news-section h3 {
+    font-size: 22px;
+    font-weight: normal;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.preview-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.preview-link:hover {
+    background: #e0e0e0;
+}
+
+/* About Page Styles */
+.about-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 40px 80px;
+}
+
+.about-container {
+    background: white;
+}
+
+.tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 40px;
+}
+
+.tab-button {
+    padding: 15px 30px;
+    background: #f5f5f5;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Georgia', serif;
+    color: #666;
+    transition: all 0.3s;
+}
+
+.tab-button:hover {
+    background: #e8e8e8;
+}
+
+.tab-button.active {
+    background: white;
+    color: #333;
+    border-bottom-color: #666;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.about-text h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.about-text h2:first-child {
+    margin-top: 0;
+}
+
+.about-text p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.about-image {
+    position: sticky;
+    top: 20px;
+    align-self: start;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 3px solid #ddd;
+}
+
+.history-section {
+    border-top: 2px solid #eee;
+    padding-top: 30px;
+}
+
+.history-section h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.history-section p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Schedule Page Styles */
+.schedule-page {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule-background {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.schedule-background img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.schedule-table-container {
+    position: absolute;
+    bottom: 127px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 80px);
+    max-width: 1100px;
+    padding: 20px 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.schedule-table-container h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.weekly-schedule {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    background: white;
+}
+
+.weekly-schedule th {
+    background: #f5f5f5;
+    padding: 10px 8px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 13px;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.weekly-schedule td {
+    padding: 12px 8px;
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.weekly-schedule .time-label {
+    background: #f9f9f9;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 12px;
+}
+
+.weekly-schedule tbody tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.schedule-note {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 6px;
+    padding-left: 5px;
+}
+
+/* Contact Page Styles */
+.contact-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 40px 80px;
+}
+
+.contact-container {
+    background: white;
+}
+
+.page-title {
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    color: #999;
+    margin-bottom: 30px;
+}
+
+.contact-heading {
+    font-size: 24px;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.zendo-image {
+    margin-bottom: 30px;
+}
+
+.zendo-image img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 3px solid #333;
+}
+
+.location-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+.address {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.directions {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    color: #4A90E2;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-info {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.facebook-info {
+    margin-bottom: 25px;
+}
+
+.facebook-info > p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.facebook-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    background: #f8f8f8;
+    border-radius: 4px;
+    max-width: 350px;
+}
+
+.facebook-badge img {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.facebook-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.facebook-name {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.facebook-followers {
+    font-size: 13px;
+    color: #666;
+}
+
+.donation-info {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.map-container {
+    margin-top: 30px;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 400px;
+        padding: 40px 20px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .teacher-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .teacher-image img {
+        width: 220px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact-page {
+        padding: 40px 20px;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+
+    .about-page {
+        padding: 40px 20px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        position: static;
+        margin-top: 30px;
+    }
+
+    .tabs {
+        flex-wrap: wrap;
+    }
+
+    .tab-button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .schedule-background {
+        padding: 10px;
+    }
+
+    .schedule-table-container {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+        margin-top: -150px;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.98);
+    }
+
+    .schedule-table-container h2 {
+        font-size: 14px;
+    }
+
+    .weekly-schedule {
+        font-size: 11px;
+    }
+
+    .weekly-schedule th,
+    .weekly-schedule td {
+        padding: 6px 3px;
+        font-size: 11px;
+    }
+
+    .schedule-note {
+        font-size: 10px;
+    }
+}

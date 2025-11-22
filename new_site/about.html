@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth+Sky Zen - About</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">EARTH+SKY ZEN</div>
+            <nav>
+                <a href="home.html">HOME</a>
+                <a href="about.html" class="active">ABOUT</a>
+                <a href="schedule.html">SCHEDULE</a>
+                <a href="friends.html">FRIENDS</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="about-page">
+        <div class="about-container">
+            <div class="tabs">
+                <button class="tab-button active" data-tab="about-us">About Us</button>
+                <button class="tab-button" data-tab="books">Recommend Books</button>
+                <button class="tab-button" data-tab="resources">Online Resources</button>
+            </div>
+
+            <div class="tab-content active" id="about-us">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>ZAZEN</h2>
+                        <p>The foundation of zen practice is zazen, the Japanese word means, 'sitting meditation'. It is  the practice of being here now, of sitting in the present moment, not lost together in the dojo, also called zendo, we sit in zazen soto-together in a structured and supportive environment. Here at Earth+Sky we have a daily, a weekly and a yearly cycle of events, all are welcome. For a full schedule of dates for including other conducive activities.</p>
+
+                        <h2>EARTH+SKY</h2>
+                        <p>Earth+sky zen is all one reality, the duality is charted throughout the Buddhist world. In this ancient sense, the word 'zen' comes from the Japanese, from the Chinese ch'an, from the Sanskrit dhyana. It always is to realise that only zen, turning present moment to past, as dust is swept or sudarshana, is obtained.</p>
+
+                        <p>Not only do we receive the present from the future, but we also practice extended attention to the present. In this present moment we realize that we exist only in interconnection with all beings and all things. We are not separate but totally everything; our cultural and spiritual background, our family karma, shape who we are and how we see. This includes not only the external or gross form but also our interior landscape—our shadow or unknown psychological habits.</p>
+
+                        <p>From a Buddhist perspective, a human being is subject to the three poisons: Greed, Hatred, and Ignorance. The Buddha is in doubt over life itself and not from what we don't want. When we look outwards towards the future and ignore the present moment we create a mental map that leads to the first poisonous state of greed (all that we desire). When looking at the past, we hold onto the bitterness of a resentment or of wisdom on a wall scale. How to roll back this shocking reality is the preoccupation of people of conscience, everywhere. Zen-practice rejects any simple map or group lies-fact.</p>
+
+                        <p>As well as our daily practice schedule, we offer eight equals throughout the year, when we come together for a practice day or days retreat. Sitting meditation is the form of the events in that category. Throughout these retreats, from early morning to late evening we hold a strict but compassionate silence. We sit zazen, chant, study the koan, do circle work.</p>
+
+                        <p>Our teachers include, Ekai Osho Korematsu, also John Kennedy, who founded the Zen 'lineage' at high Summer or Harvest Festival,  Lomdui, and Halloween – Samhain. While the core practice is zazen, we offer and provide, the third practice writing meditation, cooking and preparing food, sewing, and doing study work together. Study material is designed to be accessible and is always based on real conversation. These retreats are held in rural venues, or outdoors to the core of pilgrimage to Holy Wells. They deal with the catholic priest, to awaken to the here and grit-and-sand grey living present where we are.</p>
+                    </div>
+
+                    <div class="about-image">
+                        <img src="../img/dojo.jpg" alt="Earth+Sky Zen Zendo">
+                    </div>
+                </div>
+
+                <div class="history-section">
+                    <h2>A SHORT HISTORY</h2>
+                    <p>Alan Tainan Liebmann was brought back to Ireland in the early 1990s in more the View-About of a Geminivitae, the Schociu-recognised temple of the Deshimaru Zen lineage in Europe. Alain established the first zen centres in Ireland, in Galway and Dublin, and later, in Cork and Limerick. Since that time there has been continuous zen practice here.</p>
+
+                    <p>Alain's dharma successor, was Tim Dooley ordained and headed of the Galway Zen Dojo.</p>
+
+                    <p>Mary began studying Rinzai zen with Soen Roshi in New York, and was ordained a teacher in 2019. Her practice continues. We will celebrate 30 years of zen practice at the Dublin dojo next year. We now include live-on array of teachings and methods of the Mazeman lineage of which Mary is a teacher. The resonance of our recent ancestors and teachers, including Roshi Robert Kennedy, S.J. of Morning Star Zendo, NY and Ra / Roshi Bernis Glassman of the Zen Peacemaker Order, but spiritual friends spread widely to draw on the rich pool of our wider sangha that includes Hollow Bones (Jun Po Kelly Roshi), Palpun-Jipasa (Zaltman), and other lineages.</p>
+
+                    <p>We are closely associated with our spiritual friends here in Ireland, the Galway Zen Dojo, the Grey Haven Sangha in Tuliogir, and Black Mountain Zen in Belfast. All of us are a practice with consistency and dedication, with honesty and compassion.</p>
+                </div>
+            </div>
+
+            <div class="tab-content" id="books">
+                <h2>Recommend Books</h2>
+                <p>Coming soon...</p>
+            </div>
+
+            <div class="tab-content" id="resources">
+                <h2>Online Resources</h2>
+                <p>Coming soon...</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Tab switching functionality
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const tabName = button.getAttribute('data-tab');
+
+                // Remove active class from all tabs and content
+                document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+                // Add active class to clicked tab and corresponding content
+                button.classList.add('active');
+                document.getElementById(tabName).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
