@@ -1,26 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Earth+Sky Zen - About</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <header>
-        <div class="header-content">
-            <div class="logo">EARTH+SKY ZEN</div>
-            <nav>
-                <a href="home.html">HOME</a>
-                <a href="about.html" class="active">ABOUT</a>
-                <a href="schedule.html">SCHEDULE</a>
-                <a href="friends.html">FRIENDS</a>
-                <a href="contact.html">CONTACT</a>
-            </nav>
-        </div>
-    </header>
+---
+layout: default_new
+title: About
+nav_active: about
+extra_js: |
+    // Tab switching functionality
+    document.querySelectorAll('.tab-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const tabName = button.getAttribute('data-tab');
 
-    <main class="about-page">
+            // Remove active class from all tabs and content
+            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+            // Add active class to clicked tab and corresponding content
+            button.classList.add('active');
+            document.getElementById(tabName).classList.add('active');
+        });
+    });
+---
+
+<main class="about-page">
         <div class="about-container">
             <div class="tabs">
                 <button class="tab-button active" data-tab="about-us">About Us</button>
@@ -31,12 +30,6 @@
             <div class="tab-content active" id="about-us">
                 <div class="about-content">
                     <div class="about-text">
-                        <h2>SOSHIN MARY LAHEEN</h2>
-                        <p>Soshin Mary Laheen Roshi is our resident teacher at Earth+Sky Zen. She is an authorised teacher in the Maezumi lineage and member of the White Plum Asanga. She received dharma transmission from her teacher Jinsen Robert Kennedy Roshi in 2019 at a ceremony in Dublin, to teach and transmit the Dharma of the Buddha. In 2025 she was made a Roshi by Jinsen.
-Mary began practicing zen in the mid 1990s with Alain Tainan Liebmann, a zen teacher in the Deshimaru lineage, who came to Ireland in 1991. She took Jukai in 1998 and received Tokudo ordination from Alain in 2003. From that time she was the person responsible for the Dublin Dojo, which was founded by Alain in 1996.
-She lived at Gotanjoji Temple in Fukui Province, Japan in the Autumn of 2008 and received Tokudo in the Sotoshu tradition from Itabashi Zenji there in September of that
-</p>
-
                         <h2>ZAZEN</h2>
                         <p>The foundation of zen practice is zazen, the Japanese word means ´sitting meditation’, it is  the practice of being here now, of sitting in this present moment. We sit together in the dojo, also called a zendo, and we practice zazen together in a structured and supportive environment. Here at Earth+Sky we have a daily, a weekly and a yearly cycle of events, all centered around the practice of zazen but including other connected activities.</p>
 
@@ -85,22 +78,3 @@ In this way we create opportunities for people throughout the year, to practice 
             </div>
         </div>
     </main>
-
-    <script>
-        // Tab switching functionality
-        document.querySelectorAll('.tab-button').forEach(button => {
-            button.addEventListener('click', () => {
-                const tabName = button.getAttribute('data-tab');
-
-                // Remove active class from all tabs and content
-                document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
-                document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-
-                // Add active class to clicked tab and corresponding content
-                button.classList.add('active');
-                document.getElementById(tabName).classList.add('active');
-            });
-        });
-    </script>
-</body>
-</html>
