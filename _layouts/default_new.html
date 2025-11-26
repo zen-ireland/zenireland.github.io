@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} - {% endif %}Earth+Sky Zen</title>
-    <link rel="stylesheet" href="{{ '/new_site/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'style.css' }}">
     {% if page.extra_css %}
     <style>{{ page.extra_css }}</style>
     {% endif %}
@@ -14,11 +14,11 @@
         <div class="header-content">
             <div class="logo">EARTH+SKY ZEN</div>
             <nav>
-                <a href="{{ '/new_site/home.html' | relative_url }}" {% if page.nav_active == 'home' %}class="active"{% endif %}>HOME</a>
-                <a href="{{ '/new_site/about.html' | relative_url }}" {% if page.nav_active == 'about' %}class="active"{% endif %}>ABOUT</a>
-                <a href="{{ '/new_site/schedule.html' | relative_url }}" {% if page.nav_active == 'schedule' %}class="active"{% endif %}>SCHEDULE</a>
-                <a href="{{ '/new_site/friends.html' | relative_url }}" {% if page.nav_active == 'friends' %}class="active"{% endif %}>FRIENDS</a>
-                <a href="{{ '/new_site/contact.html' | relative_url }}" {% if page.nav_active == 'contact' %}class="active"{% endif %}>CONTACT</a>
+                <a href="{{ 'home.html' }}" {% if page.nav_active == 'home' %}class="active"{% endif %}>HOME</a>
+                <a href="{{ 'about.html'  }}" {% if page.nav_active == 'about' %}class="active"{% endif %}>ABOUT</a>
+                <a href="{{ 'schedule.html' }}" {% if page.nav_active == 'schedule' %}class="active"{% endif %}>SCHEDULE</a>
+                <a href="{{ 'friends.html' }}" {% if page.nav_active == 'friends' %}class="active"{% endif %}>FRIENDS</a>
+                <a href="{{ 'contact.html'  }}" {% if page.nav_active == 'contact' %}class="active"{% endif %}>CONTACT</a>
             </nav>
         </div>
     </header>
