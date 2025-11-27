@@ -1,4 +1,5 @@
 set quiet := false
+set dotenv-load := true
 
 tina-dev:
     npx tinacms dev -c "jekyll serve"
@@ -12,6 +13,9 @@ format-tina-lock:
 jekyll-build:
     bundle exec jekyll build
 
+jekyll-build-watch:
+    bundle exec jekyll build --watch
+
 ncu:
     npx ncu
 
@@ -21,14 +25,22 @@ ncuu:
 npm-ci:
     npm ci --omit=optional
 
-docker-build:
-    docker build .
+docker-build target="github-builder " progress="auto":
+    docker build --target {{target}} --tag zen-{{target}} --tag ghcr.io/zen-ireland/zen-{{target}} --progress {{progress}} --secret id=env,src=.env .
 
-docker-build-verbose:
-    docker build --tag zen --progress plain --build-arg TINA_TOKEN="677e9fa4137801044bd9ab898433adaef327cd10" --build-arg NEXT_PUBLIC_TINA_CLIENT_ID="b93c9438-a1c7-4af1-9690-c46b5a0f3c18" .
+docker-build-verbose: (docker-build "github-builder" "plain")
 
 bundle-install:
     bundle install
 
 docker-run:
     docker run -p 8080:80 -t zen
+
+github-gcr-login:
+    echo $GITHUB_CONTANIER_REGISTRY_ACCESS_TOKEN | docker login ghcr.io -u tomscytale --password-stdin
+
+github-registry-push target="github":
+    docker push ghcr.io/zen-ireland/zen-{{target}}-builder:latest
+
+web-server:
+    cd _site && python3 -m http.server 8000
