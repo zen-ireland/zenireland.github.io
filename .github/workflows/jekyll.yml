@@ -31,7 +31,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    container: ghcr.io/zen-ireland/zen-github-builder
+    container: ghcr.io/zen-ireland/zen-github-builder:latest
     steps:
       - name: Setup Pages
         id: pages
