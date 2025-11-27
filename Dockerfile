@@ -66,5 +66,7 @@ RUN ls -lh
 
 FROM ruby-builder AS github-builder
 
+LABEL org.opencontainers.image.source=https://github.com/zen-ireland/zenireland.github.io
+
 COPY --from=tina-builder /home/node/admin admin
 # /root/build, ownded by root
