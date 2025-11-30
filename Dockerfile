@@ -68,5 +68,14 @@ FROM ruby-builder AS github-builder
 
 LABEL org.opencontainers.image.source=https://github.com/zen-ireland/zenireland.github.io
 
+RUN apk add --no-cache tar
+
 COPY --from=tina-builder /home/node/admin admin
 # /root/build, ownded by root
+RUN ls
+RUN pwd
+
+
+FROM github-builder AS github-builder-run
+
+RUN bundle exec jekyll build
