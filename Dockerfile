@@ -3,7 +3,7 @@ FROM ruby:3.2.9-alpine3.22 AS ruby-builder
 # https://github.com/jekyll/jekyll/issues/7801
 ENV BUNDLE_FORCE_RUBY_PLATFORM=true
 
-RUN apk add \
+RUN apk add --no-cache \
     build-base \
     libffi-dev
 
@@ -22,8 +22,6 @@ COPY new_site new_site
 
 RUN bundle exec jekyll build
 
-RUN pwd
-
 
 FROM node:22-alpine3.22 AS node-builder
 
@@ -38,9 +36,6 @@ FROM node-builder AS tina-builder
 WORKDIR /home/node
 
 COPY tina tina
-
-# RUN chown -R node:node .
-# USER node
 
 RUN --mount=type=secret,id=env,target=/home/node/.env \
     if [ -f /home/node/.env ]; then \
@@ -72,8 +67,6 @@ RUN apk add --no-cache tar
 
 COPY --from=tina-builder /home/node/admin admin
 # /root/build, ownded by root
-RUN ls
-RUN pwd
 
 
 FROM github-builder AS github-builder-run
