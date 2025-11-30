@@ -41,6 +41,7 @@ jobs:
       - run: ls -la
       - run: ls /root/build
       - run: ls -l /root/build
+      - run: cp /root/build/* .
       - run: bundle exec jekyll build
 #     - name: Build with Jekyll
 #       # Outputs to the './_site' directory by default
