@@ -48,7 +48,7 @@ jobs:
 #       run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
 #       env:
 #         JEKYLL_ENV: production
-      - run: cp /root/build/admin _site/
+      - run: cp -r /root/build/admin _site/
       - run: ls -la
       - run: ls -la _site
       - name: Upload artifact
