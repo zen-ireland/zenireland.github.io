@@ -23,9 +23,13 @@ COPY new_site new_site
 RUN bundle exec jekyll build
 
 
-FROM node:22-alpine3.22 AS node-builder
+FROM node:25.2.1-alpine3.22 AS node-builder
 
 WORKDIR /home/node
+
+RUN apk add --no-cache \
+    build-base \
+    python3
 
 COPY package-lock.json package.json ./
 RUN npm ci --omit=optional
