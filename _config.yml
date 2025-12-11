@@ -45,8 +45,13 @@ exclude:
   - serve.sh
   - config.codekit
   - package.json
+  - package-lock.json
   - bower.json
   - new_site_images
+  - Dockerfile
+  - TODO.org
+  - justfile
+  - CLAUDE.md
 
 defaults:
   -
