@@ -123,7 +123,7 @@ Build requires environment variables:
 
 ## Important Notes
 
-- The new site design in `new_site/` is not yet integrated with Jekyll
+- We are only concerned with getting the files in new_site ready for release. You can ignore the old site stuff.
 - Blog posts may contain `event_date` frontmatter for upcoming events
 - The homepage (`index.html`) sorts posts by event_date and displays them in reverse chronological order
 - Static files (favicon.ico, humans.txt, robots.txt) are copied to the root of the built site

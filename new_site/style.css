@@ -10,6 +10,68 @@ body {
     line-height: 1.6;
 }
 
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    color: #999;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: normal;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    color: #444;
+}
+
+.teacher-content p {
+    text-align: justify;
+}
+
+a {
+    color: #4A90E2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
 header {
     background: linear-gradient(to bottom, rgba(108, 117, 125, 0.9), rgba(108, 117, 125, 0.7));
     padding: 20px 0;
@@ -95,6 +157,7 @@ nav a.active {
     font-size: 14px;
     line-height: 1.8;
     margin-bottom: 15px;
+    color: #bbb;
 }
 
 .hero-content .quote-author {
@@ -119,9 +182,6 @@ nav a.active {
 }
 
 .teacher-section {
-    max-width: 1200px;
-    margin: 80px auto;
-    padding: 0 40px;
     display: flex;
     gap: 60px;
     align-items: flex-start;
@@ -135,34 +195,6 @@ nav a.active {
     width: 280px;
     height: auto;
     display: block;
-}
-
-.teacher-content h2 {
-    font-size: 28px;
-    font-weight: normal;
-    letter-spacing: 3px;
-    margin-bottom: 25px;
-    color: #666;
-}
-
-.teacher-content p {
-    font-size: 15px;
-    line-height: 1.8;
-    margin-bottom: 18px;
-    color: #444;
-}
-
-.news-section {
-    max-width: 1200px;
-    margin: 60px auto 80px;
-    padding: 0 40px;
-}
-
-.news-section h3 {
-    font-size: 22px;
-    font-weight: normal;
-    color: #444;
-    margin-bottom: 20px;
 }
 
 .preview-link {
@@ -180,14 +212,29 @@ nav a.active {
 }
 
 /* About Page Styles */
-.about-page {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 40px 80px;
+.about-content {
+    #display: grid;
+    #grid-template-columns: 2fr 1fr;
+    #gap: 40px;
+    #margin-bottom: 40px;
+    background-image: url('../img/dojo_faded.jpg');
 }
 
-.about-container {
-    background: white;
+.about-text p {
+    color: #333;
+}
+
+.about-image {
+    position: sticky;
+    top: 20px;
+    align-self: start;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 3px solid #ddd;
 }
 
 .tabs {
@@ -195,6 +242,7 @@ nav a.active {
     gap: 0;
     border-bottom: 2px solid #ddd;
     margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .tab-button {
@@ -227,66 +275,6 @@ nav a.active {
     display: block;
 }
 
-.about-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 40px;
-    margin-bottom: 40px;
-}
-
-.about-text h2 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 15px;
-    margin-top: 25px;
-}
-
-.about-text h2:first-child {
-    margin-top: 0;
-}
-
-.about-text p {
-    font-size: 14px;
-    line-height: 1.7;
-    color: #444;
-    margin-bottom: 15px;
-    text-align: justify;
-}
-
-.about-image {
-    position: sticky;
-    top: 20px;
-    align-self: start;
-}
-
-.about-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border: 3px solid #ddd;
-}
-
-.history-section {
-    border-top: 2px solid #eee;
-    padding-top: 30px;
-}
-
-.history-section h2 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.history-section p {
-    font-size: 14px;
-    line-height: 1.7;
-    color: #444;
-    margin-bottom: 15px;
-    text-align: justify;
-}
-
 /* Schedule Page Styles */
 .schedule-page {
     min-height: calc(100vh - 60px);
@@ -310,93 +298,49 @@ nav a.active {
 
 .schedule-table-container {
     position: absolute;
-    bottom: 127px;
-    left: 50%;
+    bottom: 177px;
+    left: 57%;
     transform: translateX(-50%);
     width: calc(100% - 80px);
     max-width: 1100px;
     padding: 20px 30px;
-    background: rgba(255, 255, 255, 0.95);
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0.5;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
-.schedule-table-container h2 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
+.schedule-table-container p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+    padding-left: 5px;
+    color: white;
+}
+
+.schedule-table-container h1 {
     margin-bottom: 15px;
     text-align: center;
+    color: white;
 }
 
-.weekly-schedule {
+table.weekly-schedule {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 15px;
-    background: white;
+    text-align: center;
 }
 
-.weekly-schedule th {
-    background: #f5f5f5;
-    padding: 10px 8px;
-    text-align: center;
-    font-weight: normal;
-    font-size: 13px;
-    color: #333;
-    border: 1px solid #ddd;
-}
-
-.weekly-schedule td {
-    padding: 12px 8px;
-    text-align: center;
-    font-size: 13px;
-    color: #333;
+.weekly-schedule th,td {
+    padding: 1px;
     border: 1px solid #ddd;
 }
 
 .weekly-schedule .time-label {
-    background: #f9f9f9;
-    font-weight: bold;
     text-align: left;
-    padding-left: 12px;
-}
-
-.weekly-schedule tbody tr:nth-child(even) {
-    background: #fafafa;
-}
-
-.schedule-note {
-    font-size: 12px;
-    color: #444;
-    line-height: 1.5;
-    margin-bottom: 6px;
-    padding-left: 5px;
-}
-
-/* Contact Page Styles */
-.contact-page {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 60px 40px 80px;
-}
-
-.contact-container {
-    background: white;
-}
-
-.page-title {
-    font-size: 36px;
-    font-weight: normal;
-    letter-spacing: 4px;
-    color: #999;
-    margin-bottom: 30px;
-}
-
-.contact-heading {
-    font-size: 24px;
-    font-weight: normal;
-    color: #333;
-    margin-bottom: 30px;
+    padding-left: 6px;
 }
 
 .zendo-image {
@@ -409,58 +353,6 @@ nav a.active {
     height: auto;
     display: block;
     border: 3px solid #333;
-}
-
-.location-name {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 15px;
-    text-decoration: underline;
-}
-
-.address {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.directions {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.contact-info {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.contact-info a {
-    color: #4A90E2;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-.social-info {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.facebook-info {
-    margin-bottom: 25px;
-}
-
-.facebook-info > p {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 10px;
 }
 
 .facebook-badge {
@@ -494,12 +386,6 @@ nav a.active {
 .facebook-followers {
     font-size: 13px;
     color: #666;
-}
-
-.donation-info {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 30px;
 }
 
 .map-container {
