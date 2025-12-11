@@ -298,7 +298,7 @@ nav a.active {
 
 .schedule-table-container {
     position: absolute;
-    bottom: 177px;
+    top: 177px;
     left: 57%;
     transform: translateX(-50%);
     width: calc(100% - 80px);
