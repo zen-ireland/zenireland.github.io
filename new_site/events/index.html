@@ -13,7 +13,7 @@ nav_active: events
       <p>
         Our schedule of events follows the traditional Gaelic calendar. We have Zazan days on the Solstices and Equinoxes and
         Sesshins on the traditional Gaelic festivals of Samhain, Imbolc, Bealtaine and Lúnasa.
-        See <a href="yearly-cycle.html">here</a> for a visual depiction of our yearly cycle.
+        See <a href="/new_site/yearly-cycle.html">here</a> for a visual depiction of our yearly cycle.
       </p>
     </div>
   </section>
@@ -21,6 +21,26 @@ nav_active: events
 
   <section class="events-section">
     <h2>Upcoming Events {% if paginator.page > 1%}- Page {{ paginator.page }}{% endif %}</h2>
+
+    <!-- Pagination links -->
+    <div class="pagination pagination-top">
+      {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="previous">
+        Previous
+      </a>
+      {% else %}
+      <span class="previous">Previous</span>
+      {% endif %}
+      <span class="page_number ">
+        Page: {{ paginator.page }} of {{ paginator.total_pages }}
+      </span>
+      {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+      {% else %}
+      <span class="next ">Next</span>
+      {% endif %}
+    </div>
+
     <!-- This loops through the paginated posts -->
     {% for post in paginator.posts %}
     <div class="news-item-summary">
@@ -36,7 +56,7 @@ nav_active: events
     {% endfor %}
 
     <!-- Pagination links -->
-    <div class="pagination">
+    <div class="pagination pagination-bottom">
       {% if paginator.previous_page %}
       <a href="{{ paginator.previous_page_path }}" class="previous">
         Previous

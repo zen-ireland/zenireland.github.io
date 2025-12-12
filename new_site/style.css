@@ -119,7 +119,7 @@ nav a.active {
 .hero {
     position: relative;
     height: 500px;
-    background: url('../img/Lough_Kee.jpg') center/cover no-repeat;
+    background: url('/img/Lough_Kee.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -216,7 +216,7 @@ nav a.active {
     grid-template-columns: 2fr 1fr;
     gap: 40px;
     margin-bottom: 40px; */
-    background-image: url('../img/dojo_faded.jpg');
+    background-image: url('/img/dojo_faded.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -390,6 +390,15 @@ table.weekly-schedule {
 }
 .news-item-summary p {
     padding-top: 10px;
+}
+
+.pagination-top {
+    margin: 10px 20px;
+    text-align: right;
+}
+
+span.previous, span.next {
+    opacity: 0.6;
 }
 
 @media (min-width: 769px) {

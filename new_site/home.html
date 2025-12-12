@@ -88,13 +88,13 @@ nav_active: home
       <small>
         {{ post.date | date_to_string }}
       </small>
-      {{ post.content }}
+      {{ post.content | remove_images }}
     </div>
     {% endfor %}
 
     <div>
       <p>
-        <a href="events.html">More events...</a>
+        <a href="/events">More events...</a>
       </p>
     </div>
   </section>
