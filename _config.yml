@@ -29,6 +29,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -65,3 +66,6 @@ defaults:
 facebook:
   app_id: 595316791280261
   publisher: https://www.facebook.com/earthandskyzen/
+
+paginate: 20
+paginate_path: /new_site/events/page:num

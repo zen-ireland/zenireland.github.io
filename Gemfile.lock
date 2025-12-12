@@ -50,6 +50,7 @@ GEM
       sinatra-contrib (~> 4.0)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-paginate (1.1.0)
     jekyll-sass-converter (3.1.0)
       sass-embedded (~> 1.75)
     jekyll-seo-tag (2.8.0)
@@ -123,6 +124,7 @@ DEPENDENCIES
   jekyll (~> 4.4.1)
   jekyll-admin (~> 0.12.0)
   jekyll-feed (~> 0.17.0)
+  jekyll-paginate (~> 1.1.0)
   jekyll-seo-tag (~> 2.8.0)
   tzinfo-data
 
