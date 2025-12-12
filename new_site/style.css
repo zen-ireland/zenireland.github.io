@@ -384,7 +384,8 @@ table.weekly-schedule {
 }
 
 .news-item-summary {
-    padding-bottom: 10px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #cccccc;
 
 }
 .news-item-summary p {

@@ -20,19 +20,18 @@ nav_active: events
   {% endif %}
 
   <section class="events-section">
-    <h2>Upcoming Events</h2>
+    <h2>Upcoming Events {% if paginator.page > 1%}- Page {{ paginator.page }}{% endif %}</h2>
     <!-- This loops through the paginated posts -->
     {% for post in paginator.posts %}
     <div class="news-item-summary">
       <h5>
         <a href="{{ post.url }}">{{ post.title }}</a>
       </h5>
-      <small>
-        {{ post.date | date_to_string }}
-      </small>
-      {{ post.content }}
-
-      <a href="{{ post.url }}">Full details...</a>
+      <small>{{ post.date | date_to_string }}</small>
+      {{ post.content | remove_images }}
+      <p>
+        <small><a href="{{ post.url }}">Full details...</a></small>
+      </p>
     </div>
     {% endfor %}
 
