@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>html{visibility: hidden;opacity:0;}</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} - {% endif %}Earth+Sky Zen</title>
@@ -14,12 +15,12 @@
         <div class="header-content">
             <div class="logo">EARTH+SKY ZEN</div>
             <nav>
-                <a href="{{ 'home.html' }}" {% if page.nav_active == 'home' %}class="active"{% endif %}>HOME</a>
-                <a href="{{ 'about.html'  }}" {% if page.nav_active == 'about' %}class="active"{% endif %}>ABOUT</a>
-                <a href="{{ 'history.html' }}" {% if page.nav_active == 'history' %}class="active"{% endif %}>HISTORY</a>
-                <a href="{{ 'events' }}" {% if page.nav_active == 'events' %}class="active"{% endif %}>ZEN EVENTS</a>
-                <a href="{{ 'friends.html' }}" {% if page.nav_active == 'friends' %}class="active"{% endif %}>ANAMCHAIRDE</a>
-                <a href="{{ 'contact.html'  }}" {% if page.nav_active == 'contact' %}class="active"{% endif %}>CONTACT</a>
+                <a href="{{ '/home.html' }}" {% if page.nav_active == 'home' %}class="active"{% endif %}>HOME</a>
+                <a href="{{ '/about.html'  }}" {% if page.nav_active == 'about' %}class="active"{% endif %}>ABOUT</a>
+                <a href="{{ '/history.html' }}" {% if page.nav_active == 'history' %}class="active"{% endif %}>HISTORY</a>
+                <a href="{{ '/events' }}" {% if page.nav_active == 'events' %}class="active"{% endif %}>ZEN EVENTS</a>
+                <a href="{{ '/friends.html' }}" {% if page.nav_active == 'friends' %}class="active"{% endif %}>ANAMCHAIRDE</a>
+                <a href="{{ '/contact.html'  }}" {% if page.nav_active == 'contact' %}class="active"{% endif %}>CONTACT</a>
             </nav>
         </div>
     </header>

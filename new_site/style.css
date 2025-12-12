@@ -507,3 +507,9 @@ table.weekly-schedule {
         font-size: 10px;
     }
 }
+
+/* avoid flash of unstyled content */
+html {
+    visibility: visible;
+    opacity: 1;
+}
