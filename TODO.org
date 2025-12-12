@@ -1,9 +1,9 @@
 #+TITLE: TODO
 #+STARTUP: overview
 
-* TODO github actions: check npm/ruby caching
-* TODO github: pull from docker image with tinacms pre-built
-* TODO dublin page - order of elements wrong on mobile
+* DONE github actions: check npm/ruby caching
+* DONE github: pull from docker image with tinacms pre-built
+* DONE dublin page - order of elements wrong on mobile
 * TODO home page - put schedule table over lough key
 * TODO schedule page - paragraph about link between our sesshins and celtic festivals
 

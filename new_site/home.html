@@ -33,11 +33,6 @@ nav_active: home
     </div>
   </section>
 
-  <section class="news-section">
-    <h3>News - Upcoming Events</h3>
-    <a href="#preview" class="preview-link">Preview</a>
-  </section>
-
   <section class="schedule">
     <div class="schedule-table-container">
       <h1>WEEKLY SCHEDULE @ earth+sky zen</h1>
@@ -82,4 +77,26 @@ nav_active: home
       <p class="schedule-note">** No zazen on Sundays of bank holiday weekends</p>
     </div>
   </section>
+
+  <section class="news-section">
+    <h3>News - Upcoming Events</h3>
+    {% for post in site.posts limit:5 %}
+    <div class="news-item-summary">
+      <h5>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h5>
+      <small>
+        {{ post.date | date_to_string }}
+      </small>
+      {{ post.content }}
+    </div>
+    {% endfor %}
+
+    <div>
+      <p>
+        <a href="events.html">More events...</a>
+      </p>
+    </div>
+  </section>
+
 </main>

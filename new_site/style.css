@@ -68,8 +68,7 @@ a:hover {
 }
 
 main section {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 40px;
 }
 
 header {
@@ -213,11 +212,13 @@ nav a.active {
 
 /* About Page Styles */
 .about-content {
-    #display: grid;
-    #grid-template-columns: 2fr 1fr;
-    #gap: 40px;
-    #margin-bottom: 40px;
+    /*display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px; */
     background-image: url('../img/dojo_faded.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .about-text p {
@@ -296,34 +297,17 @@ nav a.active {
     display: block;
 }
 
-.schedule-table-container {
-    position: absolute;
-    top: 177px;
-    left: 57%;
-    transform: translateX(-50%);
-    width: calc(100% - 80px);
-    max-width: 1100px;
-    padding: 20px 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    opacity: 0.5;
-    color: white;
-    font-weight: bold;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-}
 
 .schedule-table-container p {
     font-size: 12px;
     line-height: 1.5;
     margin-bottom: 6px;
     padding-left: 5px;
-    color: white;
 }
 
 .schedule-table-container h1 {
     margin-bottom: 15px;
     text-align: center;
-    color: white;
 }
 
 table.weekly-schedule {
@@ -399,7 +383,42 @@ table.weekly-schedule {
     border: 0;
 }
 
+.news-item-summary {
+    padding-bottom: 10px;
+
+}
+.news-item-summary p {
+    padding-top: 10px;
+}
+
+@media (min-width: 769px) {
+    .schedule-table-container {
+        position: absolute;
+        top: 177px;
+        left: 57%;
+        transform: translateX(-50%);
+        width: calc(100% - 80px);
+        max-width: 1100px;
+        padding: 20px 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        opacity: 0.9;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+        font-family: sans-serif;
+    }
+    .schedule-table-container h1 , .schedule-table-container p{
+        color: white;
+    }
+
+}
+
 @media (max-width: 768px) {
+    main section {
+        margin-top: 20px;
+    }
+
     .header-content {
         flex-direction: column;
         gap: 20px;
@@ -464,16 +483,9 @@ table.weekly-schedule {
         padding: 10px;
     }
 
-    .schedule-table-container {
-        position: relative;
-        bottom: auto;
-        left: auto;
-        transform: none;
-        width: 100%;
-        max-width: 100%;
-        margin-top: -150px;
-        padding: 15px;
-        background: rgba(255, 255, 255, 0.98);
+    .schedule-table-container h1 {
+        font-size: 20px;
+        letter-spacing: 2px;
     }
 
     .schedule-table-container h2 {
