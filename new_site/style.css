@@ -405,7 +405,7 @@ span.previous, span.next {
     .schedule-table-container {
         position: absolute;
         top: 177px;
-        left: 57%;
+        left: 50%;
         transform: translateX(-50%);
         width: calc(100% - 80px);
         max-width: 1100px;
