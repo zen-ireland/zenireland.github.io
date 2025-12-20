@@ -522,3 +522,8 @@ html {
     visibility: visible;
     opacity: 1;
 }
+
+.events-background img {
+  width: 100%;
+  max-width: 1200px;
+}
