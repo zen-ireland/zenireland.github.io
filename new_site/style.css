@@ -118,12 +118,12 @@ nav a.active {
 
 .hero {
     position: relative;
-    height: 500px;
+    min-height: 600px;
     background: url('/img/Lough_Kee.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding: 0 80px;
+    justify-content: center;
+    padding: 60px 80px 200px 80px;
 }
 
 .hero::before {
@@ -137,38 +137,48 @@ nav a.active {
 }
 
 .hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 450px;
-    background: rgba(0, 0, 0, 0.75);
-    padding: 40px;
+    position: absolute;
+    z-index: 10;
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 35px;
     color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.hero-content h1 {
-    font-size: 32px;
-    font-weight: normal;
+.hero-content h2 {
+    font-size: 36px;
+    font-weight: 900;
     margin-bottom: 20px;
     line-height: 1.3;
+    color: white;
+    letter-spacing: normal;
 }
 
 .hero-content p {
     font-size: 14px;
     line-height: 1.8;
     margin-bottom: 15px;
-    color: #bbb;
+    color: white;
+    font-weight: 900;
 }
 
 .hero-content .quote-author {
-    font-size: 13px;
-    font-style: italic;
+    font-size: 14px;
+    font-style: normal;
     margin-bottom: 25px;
+    font-weight: 900;
 }
 
 .learn-more-btn {
     display: inline-block;
-    padding: 12px 25px;
+    padding: 15px 50px;
     border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
     color: white;
     text-decoration: none;
     font-size: 14px;
@@ -176,8 +186,9 @@ nav a.active {
 }
 
 .learn-more-btn:hover {
-    background: white;
-    color: #333;
+    background: rgba(255, 255, 255, 0.5);
+    color: white;
+    text-decoration: none;
 }
 
 .teacher-section {
@@ -402,7 +413,7 @@ span.previous, span.next {
 }
 
 @media (min-width: 769px) {
-    .schedule-table-container {
+    .schedule-page .schedule-table-container {
         position: absolute;
         top: 177px;
         left: 50%;
@@ -418,7 +429,33 @@ span.previous, span.next {
         text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
         font-family: sans-serif;
     }
-    .schedule-table-container h1 , .schedule-table-container p{
+    .schedule-page .schedule-table-container h1,
+    .schedule-page .schedule-table-container p {
+        color: white;
+    }
+
+    /* Schedule table on home page overlaying hero */
+    .hero .schedule-table-container {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 160px);
+        max-width: 900px;
+        padding: 20px 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        opacity: 0.9;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+        font-family: sans-serif;
+        background: transparent;
+        z-index: 10;
+    }
+
+    .hero .schedule-table-container h1,
+    .hero .schedule-table-container p {
         color: white;
     }
 
@@ -436,12 +473,56 @@ span.previous, span.next {
 
     .hero {
         height: auto;
-        min-height: 400px;
+        min-height: auto;
         padding: 40px 20px;
+        display: block;
     }
 
     .hero-content {
         max-width: 100%;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-bottom: 0;
+    }
+
+    .hero .schedule-table-container {
+        position: static;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        padding: 20px;
+        margin-top: 0;
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-bottom: -40px;
+        background: white;
+        color: #333;
+        font-weight: normal;
+        text-shadow: none;
+        opacity: 1;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .hero .schedule-table-container h1 {
+        color: #333;
+        font-size: 20px;
+        text-shadow: none;
+    }
+
+    .hero .schedule-table-container p {
+        color: #666;
+        text-shadow: none;
+    }
+
+    .hero .schedule-table-container table.weekly-schedule {
+        color: #333;
+    }
+
+    .hero .schedule-table-container .weekly-schedule th {
+        color: #333;
     }
 
     .teacher-section {
