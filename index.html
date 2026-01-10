@@ -1,17 +1,98 @@
 ---
+layout: default_new
 title: Home
-layout: default
+nav_active: home
 ---
 
-<h4>News - Upcoming Events</h4>
-{% assign posts_by_event_date = site.posts | sort: "date" | sort: "event_date" %}
-{% for post in  posts_by_event_date reversed %}
-<div class="homepage-post-summary">
-  <h5>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    <small style="margin-left: 20px">{{ post.date | date_to_string }}</small>
-  </h5>
+<section class="hero">
+  <div class="hero-content">
+    <h2>'Therefore, put aside the intellectual practice</h2>
+    <p>of investigating words and chasing phrases, and learn to take the backward step that turns the light and shines it inward. Body and mind of themselves will drop away, and your original face will manifest.'</p>
+    <p class="quote-author">Fukan-Zazengi, Dogen (1200-1253)</p>
+    <a href="about.html" class="learn-more-btn">Learn More →</a>
+  </div>
 
-  {{ post.content |  replace: "img ", "span "  }}
-</div>
-{% endfor %}
+  <div class="schedule-table-container">
+    <h1>WEEKLY SCHEDULE @ earth+sky zen</h1>
+    <table class="weekly-schedule">
+      <thead>
+      <tr>
+        <th></th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td class="time-label">Morning</td>
+        <td>7:30am</td>
+        <td>7:30am</td>
+        <td>7:30am</td>
+        <td>7:30am</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="time-label">Evening</td>
+        <td></td>
+        <td></td>
+        <td>6:15pm</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>6:15pm</td>
+      </tr>
+      </tbody>
+    </table>
+    <p class="schedule-note">* Introduction for beginners & newcomers on Sundays at 5:30pm. Please arrive 10 minutes before beginning of meditation.</p>
+    <p class="schedule-note">** No zazen on Sundays of bank holiday weekends</p>
+  </div>
+</section>
+
+<main>
+  <section class="teacher-section">
+    <div class="teacher-image">
+      <img src="../img/soshin-mary-laheen.jpg" alt="Soshin Mary Laheen">
+    </div>
+    <div class="teacher-content">
+      <h2>SOSHIN MARY LAHEEN</h2>
+      <p>Soshin Mary Laheen Roshi is our resident teacher at Earth+Sky Zen. She is an authorised Zen teacher in the
+        Maezumi lineage and member of the White Plum Asanga. She received dharma transmission from her teacher Jinsen
+        Robert Kennedy Roshi in 2019 at a ceremony in Dublin, to teach and transmit the Dharma of the Buddha. In 2025
+        she was made a Roshi by Jinsen.</p>
+      <p>Mary began practicing zen in the mid 1990s with Alain Tainan Liebmann, a zen teacher in the Deshimaru lineage,
+        who came to Ireland in 1991. She took Jukai in 1998 and received Tokudo ordination from Alain in 2003. From that
+        time she was the person responsible for the Dublin Dojo, which was founded by Alain in 1996.</p>
+      <p>She lived at Gotanjoji temple in Takefu, Fukui, Japan in the Autumn of 2008 and received Tokudo in the Sotoshu
+        tradition from Kōshū Itabashi Zenji there in September of that year.</p>
+    </div>
+  </section>
+
+  <section class="news-section">
+    <h3>News - Upcoming Events</h3>
+    {% for post in site.posts limit:5 %}
+    <div class="news-item-summary">
+      <h5>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h5>
+      <small>
+        {{ post.date | date_to_string }}
+      </small>
+      {{ post.content | remove_images }}
+    </div>
+    {% endfor %}
+
+    <div>
+      <p>
+        <a href="/events">More events...</a>
+      </p>
+    </div>
+  </section>
+
+</main>

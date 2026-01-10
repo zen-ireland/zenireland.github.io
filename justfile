@@ -43,4 +43,5 @@ github-registry-push target="github":
     docker push ghcr.io/zen-ireland/zen-{{target}}-builder:latest
 
 web-server:
-    cd _site && python3 -m http.server 8000
+   lighttpd -D -f lighttpd.conf
+ 

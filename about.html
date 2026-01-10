@@ -1,71 +1,89 @@
 ---
+layout: default_new
 title: About
-layout: default
+nav_active: about
+extra_js: |
+    // Tab switching functionality
+    document.querySelectorAll('.tab-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const tabName = button.getAttribute('data-tab');
+
+            // Remove active class from all tabs and content
+            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+            // Add active class to clicked tab and corresponding content
+            button.classList.add('active');
+            document.getElementById(tabName).classList.add('active');
+        });
+    });
 ---
 
-<dl class="tabs" data-tab>
-        <dd class="active"><a href="#panel1">About Us</a></dd>
-        <dd><a href="#panel2">Recommend Books</a></dd>
-        <dd><a href="#panel3">Online Resources</a></dd>
-      </dl>
-      <hr/>
-      <br/>
-      <div class="tabs-content">
-        <div class="content active" id="panel1">
-          <p> </p>
-	  <p>The meaning of the word zen is meditation, zazen means sitting meditation. In zazen practice we begin to know ourselves, and to go beyond the limits of our personal ego.   Within our tradition zazen is referred to as shikantaza (just sitting), not doing, letting go of thoughts, dropping off body and mind. This sitting meditation is the focus of our practice. Language limits our ability to communicate the true nature of zen; it is something that is better understood through practice. We are open to everyone interested in learning about zen.</p>
-          <p>Our group has been active since 1991 and currently has four practice centres, Galway, Dublin, Limerick and Ranelagh, all are closed due to the pandemic but provide opportunities for practice through zoom. In general, our practice accords with the Japanese Soto Zen tradition, as transmitted by the Japanese monk Taisen Deshimaru, who came to Europe in 1967. More recently we have also been influenced by the work of Maezumi Roshi, a Japanese Zen Master who came to the USA in the 1950s, and combined Rinzai and Soto teaching methods. </p>
-          <p>Alain Tai Nan Liebmann, having received monk ordination from Master Deshimaru in 1976, came to Ireland in the 1990s. Shortly after arriving he set up dojos in Galway, Dublin and Cork. In later years he spent time living at Gotanjoji temple in Fukui province, Japan, and received shiho (dharma transmission) from the abbot of that temple, Kōshū Itabashi Zenji, in 2013, and zuise (transmission certificate) from the Soto school. Alain left Ireland in 2014. He is currently the abbot of La Gendronnière, the mother temple of the Deshimaru lineage in the Loire Valley in France.</p>
-          <p>Mary Soshin Laheen is the teacher at Earth+Sky Zen Dublin Dojo. Mary received shiho (dharma transmission) from Robert Kennedy Roshi in 2019. She has been practicing zen since the mid 1990s, received tokudo ordination from Alain Tai Nan in 2003, and subsequently from Kōshū Itabashi Zenji at Gotanjoji Temple, Japan in 2008. She is a member of the White Plum Asanga, an affinity group of Maezumi lineage teachers.</p>
-					<p>Tom Ji Kai Cleary has been practicing zen since 1992. He received monk ordination from Alain Tai Nan in 1996 and from Kōshū Itabashi Zenji in 2011. Tom was shuso (head monk) for Alain for many years. He is the person responsible for the Galway dojo, and leads zazen days there, as well as retreats/sesshins in Ireland and occasionally in Europe.</p>
-					<p>Paidí Ó Dúbhshláine has been practicing zen since the 1970s. He is a deacon and ordained local minister at St Nicholas Collegiate Church, Galway, and is currently training for ordination as a priest in the Church of Ireland. He is the tenzo (cook) for our community, and currently facilitates zoom zazen from the Galway Zen Dojo.</p>
-	  <p>We encourage people to practice daily meditation, something that has become central to the lives of zen practitioners in our community, even though we may have jobs, families and worldly responsibilities. Through our practice we recognise ‘zen mind’ in our daily life. We organize Zazen days, weekend retreats/ sesshins, and a week-long retreat during the summer. </p>
+<main class="about-page">
+  <div class="about-container">
+    <div class="tabs">
+      <button class="tab-button active" data-tab="about-us">About Us</button>
+      <button class="tab-button" data-tab="books">Recommend Books</button>
+      <button class="tab-button" data-tab="resources">Online Resources</button>
+    </div>
+
+    <div class="tab-content active" id="about-us">
+      <div class="about-content">
+        <div class="about-text">
+          <h3>ZAZEN</h3>
+          <p>The foundation of zen practice is zazen, the Japanese word means ´sitting meditation’, it is the
+            practice of being here now, of sitting in this present moment. We sit together in the dojo, also
+            called a zendo, and we practice zazen together in a structured and supportive environment. Here
+            at Earth+Sky we have a daily, a weekly and a yearly cycle of events, all centered around the
+            practice of zazen but including other connected activities.</p>
+
+          <h3>EARTH+SKY</h3>
+          <p>Each day, we chant the Heart Sutra as it is chanted throughout the Buddhist world. In this
+            ancient verse, sitting meditation is called the ´perfection of wisdom practice´ because it
+            allows us to realize that only this fleeting present moment is real, all else is empty of
+            substance, is delusion. We can neither undo the past nor control the future, but we can bring
+            our whole hearted attention to the present. In this present moment we realize that we exist only
+            in interconnection with all beings and all things. And that interconnection includes everything:
+            our cultural and spiritual background; our location today, the weather, the amount of daylight,
+            our position relative to the sun, everything……..</p>
+
+          <p>From a Buddhist perspective, a human being is subject to the three poisons: Greed; Hatred; and
+            Ignorance, which cause us to chase what we want and run from what we don’t want. When we look
+            outwards towards the world we see the three poisons writ large across the globe. These are
+            pushing us towards environmental catastrophe, and involving us in constant and terrible war,
+            both indicate an absence of wisdom on a vast scale. How to roll back this shocking reality is
+            the preoccupation of people of conscience, everywhere. Many are gathered in small groups like
+            ours.</p>
+
+
         </div>
 
-        <div class="content" id="panel2">
-          <div class="large-12 columns">
-            <h2 id="books">Books</h2>
-            <h3 id="popular-books">Popular books</h3>
-            <ul>
-              <li>Zen Mind Beginner&#39;s Mind (Shunryu Suzuki)</li>
-              <li>Opening the Hand of Thought (Kosho Uchiyama)</li>
-              <li>The Compass of Zen (Seung Sahn)</li>
-            </ul>
-
-            <h3 id=“recent publications of interest”>Recent Publications of Interest</h3>
-            <li>Dogen&#39;s Extensive Record: A Translation of the Eihei Koroku (Leighton and Okumura)</li>
-            <li>Living by Vow: A Practical Introduction to Eight Essential Zen Chants and Texts (Shohaku Okumura)</li>
-            <li>Realising Genjokoan: The Key to Dogen&#39;s Shobogenzo (Shohaku Okumura)</li>
-            <li>Zen women: Beyond Tea ladies, Iron Maidens and Macho Masters (Grace Jill Schireson)</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="content" id="panel3">
-          <h3>Online Resources</h3>
-          <ul>
-					  <li>
-              <a href="http://whiteplum.org/">White Plum Asanga </a> - Maezumi Lineage group
-	    </li>
-			      <li>
-              <a href="http://www.zen-road.org">Sangha Sans Demeure</a> is an international group of friends and disciples of the monk Rei Ryu Philippe Coupey.
-            </li>
-            <li>
-              <a href="http://www.zen-azi.org/">AZI</a> - Association Zen Internationale is the Deshimaru Lineage group.
-            </li>
-        
-            <li>
-              <a href="http://www.izauk.org/"> AZI UK</a>
-            </li>
-          
-        
-      
-        
-              
-            <li>
-              <a href="http://www.sotozen-net.or.jp/">Soto School, Japan (Sotoshu Shumucho) </a> if you can read Japanese.
-              If you cant look at <a href="http://global.sotozen-net.or.jp/eng/index.html">global sotozen net</a>
-            </li>
-          </ul>
+        <!--
+        <div class="about-image">
+          <img src="../img/dojo.jpg" alt="Earth+Sky Zen Zendo">
         </div>
       </div>
+      -->
+
+    </div>
+
+    <div class="tab-content" id="books">
+      <h3>Recommend Books</h3>
+      <p>Coming soon...</p>
+    </div>
+
+    <div class="tab-content" id="resources">
+      <h3>Online Resources</h3>
+      <p>
+      <ul>
+        <li><a href="https://zenpeacemakers.org/">Zen Peacemakers</a></li>
+        <li><a href="https://whiteplum.org/">White Plum Asanga</a></li>
+        <li><a href="https://morningstarzendo.andnowicansee.com/">Morning Star Zendo Zoom Sesshin</a></li>
+        <li><a href="https://zen-azi.org/en">Association Zen Internationale (AZI)</a></li>
+        <li><a href="https://www.izauk.org/">IZAUK, the International Zen Association United Kingdom</a></li>
+        <li><a href="https://www.sotozen.com/eng/">The Japanese Soto Zen Association</a></li>
+      </ul>
+      <p>
+    </div>
+  </div>
+</main>

@@ -139,9 +139,9 @@ nav a.active {
 .hero-content {
     position: absolute;
     z-index: 10;
-    max-width: 900px;
-    background: rgba(0, 0, 0, 0.55);
-    padding: 35px;
+    #max-width: 900px;
+    #background: rgba(0, 0, 0, 0.55);
+    #padding: 0 35px;
     color: white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     top: 0;
@@ -437,7 +437,7 @@ span.previous, span.next {
     /* Schedule table on home page overlaying hero */
     .hero .schedule-table-container {
         position: absolute;
-        bottom: 30px;
+        bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         width: calc(100% - 160px);
