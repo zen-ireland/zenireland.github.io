@@ -6,6 +6,6 @@ categories:
 image: /img/IMG_3797.HEIC
 ---
 
-[IMG\_3797.HEIC](https://assets.tina.io/b93c9438-a1c7-4af1-9690-c46b5a0f3c18/IMG_3797.HEIC "IMG_3797.HEIC")In-person zazen will resume again from Tuesday April 7th, at 7:00 am. The summer timing will be as follows: 7am zazen, 7:25 kinhin, 7:30am second zazen, 8:10am Han+ceremony.
+In-person zazen will resume again from Tuesday April 7th, at 7:00 am. The summer timing will be as follows: 7am zazen, 7:25 kinhin, 7:30am second zazen, 8:10am Han+ceremony.
 
 It´s possible to join us for the second zazen, if you cannot make the earlier time. Ring the doorbell between 7:25am and 7:30am (only).
