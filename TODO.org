@@ -12,3 +12,4 @@
 * TODO map
 * TODO contact page
 * TODO fb share button
+* TODO index.html and home.html are duplicates
