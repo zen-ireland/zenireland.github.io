@@ -3,6 +3,7 @@ title: Lúnasa Sesshin 2026 on the Aran Islands 25/07 - 01/08
 date: 2026-06-12T23:00:00.000Z
 categories:
   - dublin
+  - sesshin
 image: /img/Lunasa 2026-Poster.jpg
 ---
 
