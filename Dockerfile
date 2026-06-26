@@ -1,4 +1,4 @@
-FROM ruby:3.2.9-alpine3.22 AS ruby-builder
+FROM ruby:4.0.5-alpine3.23 AS ruby-builder
 
 # https://github.com/jekyll/jekyll/issues/7801
 ENV BUNDLE_FORCE_RUBY_PLATFORM=true
@@ -23,7 +23,7 @@ COPY new_site new_site
 RUN bundle exec jekyll build
 
 
-FROM node:25.2.1-alpine3.22 AS node-builder
+FROM node:24.18.0-alpine3.23 AS node-builder
 
 WORKDIR /home/node
 
@@ -48,7 +48,7 @@ RUN --mount=type=secret,id=env,target=/home/node/.env \
     npx tinacms build --skip-search-index --noTelemetry --skip-indexing --skip-cloud-checks
 
 
-FROM nginx:alpine3.22-slim AS http-server
+FROM nginx:alpine3.23-slim AS http-server
 
 WORKDIR /usr/share/nginx/html
 
