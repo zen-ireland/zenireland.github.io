@@ -37,7 +37,7 @@ docker-run:
     docker run -p 8080:80 -t zen
 
 github-gcr-login:
-    echo $GITHUB_CONTANIER_REGISTRY_ACCESS_TOKEN | docker login ghcr.io -u tomscytale --password-stdin
+    echo $GITHUB_CONTAINER_REGISTRY_ACCESS_TOKEN | docker login ghcr.io -u tomscytale --password-stdin
 
 github-registry-push target="github":
     docker push ghcr.io/zen-ireland/zen-{{target}}-builder:latest
