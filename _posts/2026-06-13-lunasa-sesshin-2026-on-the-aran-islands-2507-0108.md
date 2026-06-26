@@ -7,7 +7,7 @@ categories:
 image: /img/Lunasa 2026-Poster.jpg
 ---
 
-We will return to Inis Mór this year for our annual Lúnasa Sesshin in the last week of July, ending on Lá Lúnasa.
+We will return to Inis Mór this year for our Lúnasa Sesshin in the last week of July, ending on Lá Lúnasa.
 
 Please contact us by email for more information.
 
