@@ -83,7 +83,7 @@ image: /img/Lunasa 2026-Poster.jpg                             # image path
 ```yaml
 backend:
   name: github
-  repo: zenireland/zenireland.github.io   # VERIFY org/repo & default branch (master)
+  repo: zen-ireland/zenireland.github.io  # confirmed from git remote; default branch master
   branch: master
 media_folder: "img"
 public_folder: "/img"
