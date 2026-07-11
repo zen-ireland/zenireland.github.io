@@ -1,0 +1,41 @@
+# Sveltia CMS configuration (Decap-compatible).
+# Uncomment local_backend and run `npx @sveltia/cms-proxy-server` to edit against
+# the local working tree without touching GitHub.
+local_backend: true
+
+backend:
+  name: github
+  repo: zen-ireland/zenireland.github.io
+  branch: master
+
+# Media uploads land in /img (matches Tina's mediaRoot). Posts reference images
+# with a root-absolute path, e.g. `image: /img/Lunasa 2026-Poster.jpg`.
+media_folder: "img"
+public_folder: "/img"
+
+collections:
+  - name: "post"
+    label: "Posts"
+    folder: "_posts"
+    create: true
+    # YYYY-MM-DD-<slugified-title>.md, matching the existing filenames.
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", picker_utc: true }
+      - label: "Categories"
+        name: "categories"
+        widget: "select"
+        multiple: true
+        required: false
+        options:
+          - { label: "Dublin", value: "dublin" }
+          - { label: "Galway", value: "galway" }
+          - { label: "Sesshin", value: "sesshin" }
+          - { label: "Limerick", value: "limerick" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      # Optional: some posts carry event_date; index.html sorts events by it.
+      - { label: "Event date", name: "event_date", widget: "datetime", picker_utc: true, required: false }
+      - { label: "Body", name: "body", widget: "markdown" }

@@ -2,6 +2,53 @@
 
 **Goal:** Stand up Sveltia CMS (a modern, actively-maintained, Decap-compatible Git-based CMS) so it can be compared side-by-side with the current TinaCMS admin. Motivation: get a simpler editing front end without Tina's build step / cloud tokens.
 
+---
+
+## Status: prototype built (branch `sveltia-cms`)
+
+A minimal Sveltia admin is in place at `/admin-sveltia/`, coexisting with Tina's `/admin/`.
+
+**Files added:**
+- `admin-sveltia/index.html` — loads Sveltia CMS from unpkg as an ES module; `noindex`.
+- `admin-sveltia/config.yml` — GitHub backend + the Posts schema below.
+
+**Schema implemented** (mirrors `tina/config.ts` on `master`): `title` (string), `date`
+(datetime, UTC), `categories` (multi-select: dublin/galway/sesshin/limerick, optional),
+`image` (optional), optional `event_date` (datetime), `body` (markdown).
+`media_folder: img` / `public_folder: /img` and slug `{{year}}-{{month}}-{{day}}-{{slug}}`.
+
+**Corrections vs. the original sketch below:**
+- Repo is **`zen-ireland/zenireland.github.io`** (not `zenireland/...`) — confirmed via `git remote`.
+- Sveltia's local backend uses the **`decap-server`** proxy package; `@sveltia/cms-proxy-server`
+  does not exist on npm.
+
+**Verified:**
+- `bundle exec jekyll build` emits both files to `_site/admin-sveltia/`; `config.yml` is copied
+  byte-identical (no Liquid mangling of the `{{year}}` slug template), so no `_config.yml`
+  include/exclude changes were needed.
+- Local proxy `POST /api/v1 {"action":"info"}` returns `{"type":"local_fs"}`; admin page serves 200.
+
+**Still to verify manually (browser + GitHub OAuth):** production GitHub auth from the live
+origin, and confirming committed files match Tina's frontmatter shape. Compare editor UX vs. Tina.
+
+### Run it locally (no GitHub login)
+
+`config.yml` has `local_backend: true`, so the CMS reads/writes the **local working tree** via a proxy:
+
+```bash
+# terminal 1 — the Decap/Sveltia local proxy (listens on :8081)
+npx decap-server
+
+# terminal 2 — serve the Jekyll site
+bundle exec jekyll serve --host 0.0.0.0 --port 4000
+```
+
+Open `http://localhost:4000/admin-sveltia/`. Edits/creates land as uncommitted changes in
+`_posts/` (and `img/` for uploads) — inspect with `git diff` and compare to Tina's output.
+For production use, comment `local_backend` back out and register a GitHub OAuth app for the live origin.
+
+---
+
 ## Why Sveltia
 - Git-based like Tina: commits Markdown + YAML frontmatter to `_posts/` — right model for this Jekyll static site.
 - Actively developed; drop-in compatible with Decap CMS `config.yml`; talks to the GitHub API directly (no separate OAuth backend needed for GitHub auth).
