@@ -15,4 +15,4 @@ The course will be led by **Brian Lynch**, who completed teacher training in 201
 
 Cost for 6 classes: €72.
 
-Please register by email before Sept. 20th
+Please register by sending us an email before Sept. 20th
