@@ -1,6 +1,6 @@
 ---
 title: 'Stillness at Samhain: Non-residential Sesshin Friday eve Oct. 30 - Sunday eve Nov. 1'
-date: 2026-09-29T11:41:00.557Z
+date: 2026-09-29T10:41:00.557Z
 categories:
   - dublin
 ---
