@@ -9,4 +9,4 @@ The ancient festival of Samhain from which our contemporary Hallowe’en comes, 
 
 At Earth+Sky we will mark the occasion with a sesshin, beginning on Friday evening with zazen at 7:30pm and ending with a Ceremony for the Dead on Sunday evening. See poster and timetable here.
 
-Send us an email if you would like to join: zen.in.ireland\@gmail.com
+Send us an email if you would like to join: [zen.in.ireland@gmail.com ](mailto:zen.in.ireland@gmail.com)
