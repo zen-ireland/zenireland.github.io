@@ -57,6 +57,12 @@ export default defineConfig({
             type: 'datetime',
             label: 'Date',
             name: 'date',
+            required: true,
+            ui: {
+              validate: (value: any) => {
+                if (!value) return 'A date is required for every post';
+              },
+            },
           },
           {
             type: 'rich-text',

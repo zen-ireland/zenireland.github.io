@@ -1,10 +1,10 @@
 {
   "schema": {
     "version": {
-      "fullVersion": "2.4.11",
-      "major": "2",
-      "minor": "4",
-      "patch": "11"
+      "fullVersion": "3.0.0",
+      "major": "3",
+      "minor": "0",
+      "patch": "0"
     },
     "meta": {
       "flags": [
@@ -37,6 +37,8 @@
             "type": "datetime",
             "label": "Date",
             "name": "date",
+            "required": true,
+            "ui": {},
             "namespace": [
               "post",
               "date"
@@ -171,6 +173,18 @@
         "description": {
           "kind": "StringValue",
           "value": ""
+        },
+        "directives": []
+      },
+      {
+        "kind": "ScalarTypeDefinition",
+        "name": {
+          "kind": "Name",
+          "value": "RichText"
+        },
+        "description": {
+          "kind": "StringValue",
+          "value": "A rich-text document, renderable by TinaMarkdown"
         },
         "directives": []
       },
@@ -1451,10 +1465,13 @@
             },
             "arguments": [],
             "type": {
-              "kind": "NamedType",
-              "name": {
-                "kind": "Name",
-                "value": "String"
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "String"
+                }
               }
             }
           },
@@ -1469,7 +1486,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "JSON"
+                "value": "RichText"
               }
             }
           },
@@ -2550,7 +2567,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "JSON"
+                "value": "RichText"
               }
             }
           },
