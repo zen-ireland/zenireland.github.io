@@ -14,4 +14,4 @@
 * TODO fb share button
 * TODO index.html and home.html are duplicates
 * TODO new events not showing up in Tina posts
-
+* TODO small image in events list
