@@ -1,6 +1,8 @@
 ---
 title: 'Stillness at Samhain: Non-residential Sesshin Friday eve Oct. 30 - Sunday eve Nov. 1'
 date: 2026-09-29T11:41:00.557Z
+categories:
+  - dublin
 ---
 
 The ancient festival of Samhain from which our contemporary Hallowe’en comes, occurred during the period from sunset on October 31st to sunset on November 1st. It marked the beginning of winter and the transition to a new year.
