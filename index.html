@@ -86,6 +86,9 @@ nav_active: home
         {{ post.date | date_to_string }}
       </small>
       {{ post.content | remove_images }}
+      <p>
+        <small><a href="{{ post.url }}">Full details...</a></small>
+      </p>
     </div>
     {% endfor %}
 
