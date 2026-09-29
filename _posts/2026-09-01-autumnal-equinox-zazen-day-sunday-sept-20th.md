@@ -1,5 +1,6 @@
 ---
 title: 'Autumnal Equinox Zazen Day - Sunday, Sept. 20th'
+date: 2026-09-01T11:41:00.557Z
 categories:
   - dublin
 ---

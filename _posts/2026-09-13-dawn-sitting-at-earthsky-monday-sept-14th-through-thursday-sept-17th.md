@@ -1,5 +1,6 @@
 ---
 title: 'Dawn sitting at Earth+Sky, Monday, Sept. 14th through Thursday, Sept. 17th'
+date: 2026-09-13T11:41:00.557Z
 categories:
   - dublin
 ---

@@ -1,5 +1,6 @@
 ---
 title: Autumn Schedule at Earth+Sky Zen begins on Sunday September 6th
+date: 2026-08-30T11:41:00.557Z
 categories:
   - dublin
 ---

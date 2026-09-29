@@ -1,5 +1,6 @@
 ---
 title: 'Dawn Sitting Monday through Friday this week, Sept. 28th - Oct. 2nd 6:30am - 7:10am followed by Morning Ceremony'
+date: 2026-09-27T11:41:00.557Z
 ---
 
  All welcome. 

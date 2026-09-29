@@ -1,5 +1,6 @@
 ---
 title: Dawn Sitting at Earth+Sky Zen Sept. 22nd - Sept. 25th
+date: 2026-09-19T11:41:00.557Z
 categories:
   - dublin
 ---

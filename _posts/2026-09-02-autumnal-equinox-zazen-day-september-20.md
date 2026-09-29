@@ -1,5 +1,6 @@
 ---
 title: Autumnal Equinox Zazen Day September 20
+date: 2026-09-02T11:41:00.557Z
 categories:
   - dublin
   - sesshin
