@@ -1,4 +1,4 @@
-FROM ruby:4.0.5-alpine3.23 AS ruby-builder
+FROM ruby:4.0.7-alpine3.23 AS ruby-builder
 
 # https://github.com/jekyll/jekyll/issues/7801
 ENV BUNDLE_FORCE_RUBY_PLATFORM=true
@@ -23,7 +23,7 @@ COPY new_site new_site
 RUN bundle exec jekyll build
 
 
-FROM node:24.18.0-alpine3.23 AS node-builder
+FROM node:24.21.0-alpine3.23 AS node-builder
 
 WORKDIR /home/node
 
@@ -32,8 +32,7 @@ RUN apk add --no-cache \
     python3
 
 COPY package-lock.json package.json ./
-RUN npm ci --omit=optional
-
+RUN npm install
 
 FROM node-builder AS tina-builder
 
