@@ -1,6 +1,6 @@
 ---
 title: 'Winter Solstice Gathering Sunday, Dec. 20th '
-date: 2026-11-30T11:36:44.831Z
+date: 2026-11-27T11:36:44.831Z
 categories:
   - dublin
   - sesshin
