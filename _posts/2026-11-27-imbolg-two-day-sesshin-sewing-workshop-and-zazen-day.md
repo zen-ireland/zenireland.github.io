@@ -1,6 +1,6 @@
 ---
 title: 'Imbolg - Two Day Sesshin, Sewing Workshop and Zazen Day'
-date: 2026-11-29T11:46:37.427Z
+date: 2026-11-27T11:46:37.427Z
 categories:
   - dublin
   - sesshin
